@@ -46,3 +46,18 @@ SRC-044,新中国成立以来国家图书馆藏甲骨的整理研究,陈红彦/�
 SRC-045,金文所见：合文字（合书）,徐驳,2024,popular_epigraphy_discussion,https://www.sohu.com/a/751209817_121843268,POPULAR_ARTICLE_READ,将无终戈释为合文字且定商晚期; 与石蝶2006中商断代不同; 不等权威证据
 SRC-046,殷周金文集成书目与编号分卷,日本大学图书馆联合目录CiNii,未标年,bibliographic_catalog,https://ci.nii.ac.jp/ncid/BN04916392,BIBLIOGRAPHIC_CATALOG_READ,集成第13册爵角7313-8310; 第17册戈戟10591-11407; 不代表已核原拓
 SRC-047,殷周金文集成著录检索（民间OCR）,天乙堂,2026网页现存,nonofficial_search_index,https://ebronze.net/,INDEX_PAGE_READ,自称11982件OCR录入且提示错误; 可用作检索线索不直接确证字形或断代
+SRC-048,史记·秦始皇本纪,司马迁,西汉,classical_text,https://ctext.org/shiji/qin-shi-huang-ben-ji/zhs,CLASSICAL_TEXT_LOCATED,三十六郡与封建诸侯争论，不能视为秦全时期不变郡名录
+SRC-049,里耶秦简第六批中国档案文献遗产名录项目申报书,湖南省文物考古研究院/里耶古城博物馆,2025,national_archives_nomination,https://www.saac.gov.cn/mowcn/cn/6sbs/202512/2ff404ba00dc424ba385e7e754fa890d.shtml,OFFICIAL_FULL_TEXT_CHECKED,3.8万余秦代相关档案及主干纪年，2026有文书属性修正假说
+SRC-050,里耶秦简贰出版说明,湖南省文物考古研究院,2022网页,archaeology_book_catalog,https://www.hnkgs.com/front/toReadNews.do?id=2906,OFFICIAL_CATALOG_LOCATED,里耶秦简贰2017文物出版社及第九层简图版释文，未实查原书
+SRC-051,迁陵洞庭郡简,深圳博物馆,未标年,museum_exhibit,https://shenzhenmuseum.com/collectiondetial?clazzName=CmsCollection&eid=6ac2426413bb4be3b345d400b6d1d322&resId=7cb85da9a715421292e6762f1956b807&type=1,INDEX_EXCERPT_ONLY,检索摘要有迁陵洞庭郡释文，正文网页访问超时
+SRC-052,里耶秦简所见的洞庭郡：战国秦汉郡县制个案研究之一,游逸飞,2015,peer_reviewed_academic_pdf,https://www.cuhk.edu.hk/ics/journal/articles/v61p029.pdf,PDF_TEXT_AND_SCREEN_CHECKED,中国文化研究所学报61期29页起，PDF第1、13页截图核读，表五及简8-159与9-712+9-758
+SRC-053,秦洞庭和苍梧郡新识,陈伟,2019,academic_article,https://www.cssn.cn/lsx/lsx_zgs/202210/t20221024_5552536.shtml,ACADEMIC_TEXT_READ,简8-755等前222年迁陵为秦县，洞庭苍梧郡设立时间推断
+SRC-054,史记·高祖本纪,司马迁及古注,西汉/唐注,classical_text,https://www.chinakongzi.org/kzsf/wxxs/mingpian/shiji/200705/t20070524_25239.htm,CLASSICAL_TEXT_LOCATED,郦邑更名新丰，需与汉书高祖七年置县分开
+SRC-055,秦汉时期两次大规模更改地名的比较,徐鸿修,1997,academic_article,https://iqh.ruc.edu.cn/old/zglsdlyj/lsdl_dmxyd/dmyj/bf0b3ff1718f4b73bfc9f1d2cf3a5e8e.htm,SEARCH_EXCERPT_FULL_AVAILABLE,文史哲1997年第2期39-42页；秦统一与王莽改名机制是作者解释
+SRC-056,武陵郡时空地名条目,复旦大学/哈佛CHGIS,2026检索,historical_gis,https://tgaz.fudan.edu.cn/tgaz/placename/hvd_32872,CHGIS_RECORD_READ,西汉武陵郡前202-13年分期、含迁陵县; 不证明秦洞庭直接全部等同
+SRC-057,有锡县时空地名条目,复旦大学/哈佛CHGIS,2026检索,historical_gis,https://tgaz.fudan.edu.cn/tgaz/placename/hvd_40441,CHGIS_RECORD_READ,王莽无锡改有锡，公元14-22年为CHGIS暂定时间，23年复名
+SRC-058,里耶简牍属性重估,海来阿合,2026,scholarly_newspaper_hypothesis,https://www.cssn.cn/skgz/bwyc/202608/t20260806_6062341.shtml,ARTICLE_READ_HYPOTHESIS_UNVERIFIED,主张楚秦合简，凭9-947昭王四十二年产和9-2330献马之月; 文书日期与所记出生年不能混
+SRC-059,汉书补注卷一下：新丰释源引应劭,王先谦汇集应劭等,清/东汉注,classical_commentary,https://zh.wikisource.org/zh-hans/漢書補注/卷一下,COMMENTARY_TEXT_LOCATED,太上皇思丰故里与仿旧丰迁民；后世整理，非同时代行政命名文书
+SRC-060,太平御览卷一百七十：无锡有锡,李昉等,宋,classical_quotation,https://zh.wikisource.org/zh-hans/太平御覽/0170,CLASSICAL_TEXT_LOCATED,引汉志无锡莽曰有锡及谶语属不同层级的古代解释
+SRC-061,秦始皇实施书同文字的年月新考——从里耶秦简所记廿六年及其用字特征考证,陈正贤,2020,academic_article,https://fdgwz.org.cn/Web/Show/4556,ACADEMIC_ABSTRACT_READ,书同文字进程与某政区名称管理同步性不得预设
+SRC-062,迁陵洞庭郡简国家博物馆展出报道,红网/国博展览资料,2019,museum_exhibition_report,https://xx.rednet.cn/content/2019/08/07/5794161.html,EXHIBIT_REPORT_READ,展览列迁陵洞庭郡简释文，说明出土地方官署真实使用
