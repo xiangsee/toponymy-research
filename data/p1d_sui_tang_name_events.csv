@@ -1,0 +1,13 @@
+event_id,case_id,evidence_object,name_form,admin_generic,date_or_range,historical_referent,event_type,source_ids,source_status,not_established,verification_next
+ST-E001,C050,隋开皇九年置杭州,杭州,州,589年（经历史记载）,隋余杭县区域,ADMIN_PREFECTURE_ESTABLISHED,SRC-114|SRC-115,LATER_CLASSICAL_RECORD,余杭县更早名称词源未解决,核隋书余杭郡条及元和郡县图志
+ST-E002,C050,隋炀帝改余杭郡,余杭郡,郡,607年左右,杭州与余杭县所在历史区域,ADMIN_GENERIC_AND_SPECIFIC_RENAME,SRC-114|SRC-115,CLASSICAL_TEXT,是否同日发布逐地改郡诏令尚缺,核隋书地理志和唐书纪年
+ST-E003,C050,唐武德四年杭州,杭州,州,621年,平李子通后置州,PREFECTURE_ESTABLISHED_OR_RESTORED,SRC-115,CLASSICAL_TEXT,隋杭州曾有此名并非621首创,核旧唐书与新唐书武德资料
+ST-E004,C050,唐天宝余杭郡,余杭郡,郡,742至757年,杭州州辖县历史区域,ADMIN_RENAMED_AS_COMMANDERY,SRC-115|SRC-118,CLASSICAL_AND_CHGIS,名称含余杭不代表余杭县成为郡,校天宝元年改郡史料
+ST-E005,C050,唐乾元杭州,杭州,州,758年后,唐余杭郡所在区域,ADMIN_NAME_RESTORED,SRC-115|SRC-119,CLASSICAL_AND_CHGIS,州界从742到758是否全部相同仍待审查,核属县时间与州治
+ST-E006,C050,隋唐杭州州治迁钱塘,杭州,州治地点,隋代至唐开元年间,余杭县移州治钱塘后又迁,ADMIN_SEAT_MOVE,SRC-115|SRC-120,CLASSICAL_AND_CHGIS,迁治具体地点不是现代市址自动锚定,逐条核钱塘古城戍和开元迁治
+ST-E007,C052,潜州置州,潜州,州,624年,於潜临水两县辖区,TEMP_PREFECTURE_ESTABLISHED,SRC-115,CLASSICAL_TEXT,短命潜州不等于侨州,核唐武德七年建制
+ST-E008,C052,潜州撤并,於潜县,县,625年,潜州废后於潜还杭州,TEMP_PREFECTURE_ABOLISHED_COUNTY_PERSISTS,SRC-115,CLASSICAL_TEXT,临水县被废不表示整个自然地理名称消失,核旧唐书古於潜县条
+ST-E009,C051,隋新城郡,新城郡,郡,607至618年前,梓州先前政区,ADMIN_PREDECESSOR,SRC-116,CLASSICAL_TEXT,具体初置新城郡与隋名沿革另核,查隋书地理志
+ST-E010,C051,唐武德梓州,梓州,州,618年,隋新城郡所在政区,ADMIN_RENAMED_AS_PREFECTURE,SRC-116,CLASSICAL_TEXT,梓州是否仅源于水名属旧唐书解释,核川中水道与原典
+ST-E011,C051,唐天宝梓潼郡,梓潼郡,郡,742至757年,唐梓州所在政区,ADMIN_RENAMED_AS_COMMANDERY,SRC-116,CLASSICAL_TEXT,不等于梓潼县即州郡政区同物,核郡县名单
+ST-E012,C051,唐乾元梓州,梓州,州,758年后,唐梓潼郡所在政区,ADMIN_NAME_RESTORED,SRC-116,CLASSICAL_TEXT,旧州辖境与当时梓潼郡辖境精确关系未核,核乾元元年改州史料
