@@ -1,0 +1,8 @@
+relation_id,from_attestation_id,to_attestation_id,relation_type,assertion,source_ids,epistemic_status,evidence_gap,invalid_inference,verification_next
+R001,A-M008,A-M006,SAME_FORM_MULTIPLE_ROLES,《合集》6946的围目与33367田目可能同地不同政治时段也可能异地同名,SRC-028,COMPETING_HYPOTHESES,不同片原图与年代组别未对齐,不能推断战败后自动成为王畿,校原片及商王田猎路线
+R002,A-M006,A-M007,SAME_GRAPH_WITH_DIFFERENT_RECORD_TYPES,甲骨田猎地目与目爵族氏符号同形,SRC-026|SRC-027|SRC-030,SAME_FORM_ONLY,缺族氏与地名之间共同指称或迁徙证据,不能判族名先于地名,核集成7494原拓及合集33367
+R003,A-M003,A-M006,PERSON_VS_PLACE,子目人名与田猎目相同字形,SRC-027,SAME_GRAPH_ONLY,缺同人同族同地的连接证据,不能推子目居于目地,核不同卜辞断代和人物身份
+R004,A-W001,A-W002,PROPOSED_SHARED_CLAN,商代铜戈与甲骨4307反被研究者关联至亡终族,SRC-031|SRC-032,SECONDARY_ASSOCIATION,甲骨原片未核且跨器物指称未确证,不等于已证同族/同地,核原片和原拓并比较族徽
+R005,A-W001,A-W003,LONG_RANGE_NAME_CONTINUITY,商代无终戈与春秋无终子可能存在名称继承,SRC-031|SRC-035,HYPOTHESIS_UNPROVEN,缺跨商周诸多世纪连续证据,不可把同名写成同一集团,检独立考古族氏材料和周代中间证据
+R006,A-W003,A-W004,LATER_HISTORICAL_IDENTIFICATION,汉书右北平郡无终县追述为故无终子国,SRC-035|SRC-038,TEXTUAL_TRADITION_ATTESTED,古籍的历史地望及县域范围尚待核,不等于已证同一历史人口实体连续,查汉书点校与秦汉政区沿革
+R007,A-W005,A-W004,LATER_ETYMOLOGY_EXPLANATION,唐李贤注明说无终山名进而成为国号及县名,SRC-034,LATER_COMMENTARY_ATTESTED,未找到商代同期山名先在证据,不可将唐注解释当作原始命名现场事实,查更早无终山称谓及地望
