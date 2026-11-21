@@ -96,3 +96,14 @@ SRC-094,绍兴县志会稽山山系数字页面257,浙江省地方志数字化�
 SRC-095,清代政区重名及其治理,陶恒,2026,peer_reviewed_abstract,https://www.lsdlyj.com.cn/CN/10.20166/j.issn.2096-6822.L20250111,OFFICIAL_JOURNAL_ABSTRACT_READ,清代重名与官印省名补注；作为后续国家治理反证线索，不作为本轮已读全文
 SRC-096,姑苏区历史及苏州市政区沿革,苏州市人民政府,2024,official_administrative_history,https://www.suzhou.gov.cn/szsrmzf/szsqsl2024/202406/340a0dd942ce41f3a4129b539d8d35e3.shtml,OFFICIAL_FULL_READ,2012三老区合设姑苏区与层级变动，可对照2012批复
 SRC-097,绍兴市情概要历史沿革（省方志摘录）,绍兴市地方志相关编纂机构,近年,government_gazetteer_excerpt,https://zjjcmspublic.oss-cn-hangzhou-zwynet-d01-a.internet.cloud.zj.gov.cn/jcms_files/jcms1/web2247/site/attach/0/af21fc8d49ff4265a0343dbf34b905cc.pdf,SEARCH_EXCERPT_ONLY_PDF_NOT_REOPENED,1131绍兴府与1911山会县合并、1914会稽道宁波相关史料线索，具体页码待核
+SRC-098,隋书卷二十四食货志侨人侨立郡县,魏徵等唐修,唐,classical_text,https://zh.wikisource.org/zh/隋書/卷24,CLASSICAL_TEXT_READ,皆取旧壤之名侨立郡县；唐修文献不是东晋原始政令
+SRC-099,宋书州郡志一南兰陵太守,沈约,南朝齐梁,classical_admin_geography,https://www.zhonghuashu.com/wiki/宋書/卷35,CLASSICAL_TEXT_READ,南兰陵太守领兰陵承两县及户口；须核历史实土与郡治
+SRC-100,东晋十六国南北朝侨州郡县与侨流人口研究成果简介,全国哲学社会科学工作办公室,2011,national_research_project,https://www.nopss.gov.cn/GB/219506/219508/219522/14640055.html,OFFICIAL_PROJECT_SUMMARY_READ,胡阿祥归纳侨置3要素；专著全文尚未本轮独立审读
+SRC-101,东晋南朝侨州郡县与侨流人口研究序言及目录,胡阿祥等,2010发布,monograph_catalog,https://iqh.ruc.edu.cn/old/zglsdlyj/lsdl_lzjj/xbml/efdf8259cf934f26aaf87bb32bee9a64.htm,ACADEMIC_CONTENTS_READ,完整专著目录侨置源流土断地理分布与侨流；非正文通读
+SRC-102,论土断,胡阿祥,2001,peer_reviewed_abstract,https://njdx.cbpt.cnki.net/portal/journal/portal/client/paper/dc29a0ceb1619a51caada66003786a96,JOURNAL_ABSTRACT_READ,2001年南京大学学报83-92页，土断整理政区与白籍黄籍的双重目的
+SRC-103,论东晋南朝的侨州郡县,陈乾康,1995,peer_reviewed_pdf,https://wkxb.sicnu.edu.cn/Publish/201603/20160318111708687.pdf,ABSTRACT_EXCERPT_READ,土断不是简单废止所有侨州郡县；政区最终整理与隋统一有关，PDF全文尚需逐页核
+SRC-104,兰陵郡502至557年及陈代东海郡历史地望,复旦CHGIS,现有数据库,historical_gis,https://tgaz.fudan.edu.cn/tgaz/placename/hvd_32370,CHGIS_RECORD_READ,502梁改南东海为兰陵，陈558改东海；界线为现代推定
+SRC-105,武进县与梁代兰陵县侨置和实土转化,复旦CHGIS,现有数据库,historical_gis,https://tgaz.fudan.edu.cn/tgaz/placename/hvd_40454,CHGIS_SOURCE_NOTES_READ,武进兰陵县梁502土断与迁治校考；仍有地望异说
+SRC-106,东晋南朝侨州郡县研究导论,南京大学李凭,2009序/公开转载,academic_foreword,https://www.nju.edu.cn/info/3191/124991.htm,ACADEMIC_FOREWORD_READ,侨郡无实土与割实、迁入地和原地同名叠置的复杂性
+SRC-107,东晋南朝地名大搬家与侨州郡县,中国人民大学清史研究所转载地名史文章,2009,historical_geography_explainer,https://iqh.ruc.edu.cn/old/zglsdlyj/lsdl_dmxyd/dmyj/2825998191284f7daca83f33955cd902.htm,SCHOLARLY_EXPLAINER_READ,旧名称迁入今苏皖鄂川等地区；本身概括不代替原始文献
+SRC-108,齐梁故里属地及南兰陵历史解释,薛锋,2009,regional_academic_argument,https://m.fx361.com/news/2009/0405/20512777.html,REGIONAL_ARGUMENT_READ,武进与丹阳祖地地望存在历史研究争议；作者单方主张非定论
