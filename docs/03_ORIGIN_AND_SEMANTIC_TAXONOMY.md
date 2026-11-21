@@ -101,3 +101,17 @@ NEW_NAME、RENAME、REINSTATE、ALIAS、BORROW、TRANSFER、SPLIT、MERGE、EXPA
 **重要反证**：国家图书馆实物核验甲骨缀合504组中发现39组误缀，说明“已有著录关系”本身亦可修正。这一数字仅对应国图核验样本，不能换算为甲骨著录整体误缀率。
 
 研究札记见 [P1A_05](research/P1A_05_CATALOG_PROVENANCE_AND_ENTITY_IDENTITY.md)。
+
+## I. 行政名称操作独立于原始词源（P1-B v0.6）
+
+新增“名称操作方式”（不按字面制造词源）：
+- `ADMIN_ADOPTION_OLD_NAME`：已有地名进入新郡县层级。
+- `ADMIN_REASSIGNMENT`：同名县改属不同上级政区（需证明行政归属而不是仅同名）。
+- `ADMIN_RECORD_ROUTING`：某名称在邮书、公文、赋税和户籍中承担行政地址功能。
+- `IDENTITY_TRANSFER_VIA_MIGRATION`：迁民或仿建旧乡形成新地名（如新丰相关释源）。
+- `POLITICAL_RENAME`：政治改制导致的文字更名（如有锡、迁陆）。
+- `NAME_PERSISTENCE_WITH_BOUNDARY_UNCERTAINTY`：名称跨时代重见，但县治、郡界是否连续另核。
+
+**反证**：不因“洞庭郡”与“武陵郡”辖若干同名县就默认一个郡完全改名为另一个郡，也不因秦迁陵二十五年为县就断言“迁陵”词语当年首次出现。
+
+见 [P1B札记01](research/P1B_01_QIN_HAN_TOPONYM_STANDARDIZATION.md)。
