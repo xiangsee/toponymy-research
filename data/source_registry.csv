@@ -12,3 +12,15 @@ SRC-010,地名用字在语文辞书中的合理呈现问题,作者待核,2024,ac
 SRC-011,太平御览卷一百五十七,李昉等编（宋）,北宋,classical_quotation,https://www.shidianguji.com/book/NGJ8924120000010602678/chapter/1lwxjmtl1vr4r,TEXT_LOCATED,传存归名应劭汉官仪引文；需同水经注逐字校勘
 SRC-012,论两汉时期中国地名学的奠基,华林甫,1996,academic_article,https://iqh.ruc.edu.cn/old/zglsdlyj/lsdl_dmxyd/dmxsyj/10f4cf14e863413ba4cab26f8b6018e8.htm,BIBLIOGRAPHY_LOCATED,中国史研究1996年第2期14-25页；网页可定位文本线索
 SRC-013,CHGIS时间序列数据,复旦大学中国历史地理研究所,2023,historical_gis,https://yugong.fudan.edu.cn/info/1361/15131.htm,BIBLIOGRAPHY_LOCATED,说明覆盖秦统一至清末；辅助政区时空核对而非词源证明
+SRC-014,中国国家博物馆展览宅兹中国：何尊,中国国家博物馆,2020,museum_exhibition,https://www.chnmuseum.cn/portals/0/web/zt/202008zzzg/,MUSEUM_TEXT_READ,何尊出土馆藏/成周/大邑商/中国字句与语义异说
+SRC-015,首批禁止出国（境）展览文物：何尊,宝鸡市文物局,2025,heritage_official,https://wwj.baoji.gov.cn/zzzb/wbwy/202505/t20250512_1147496.html,OFFICIAL_PAGE_READ,1963出土/12行122字；最早文字记录不代表最早创词
+SRC-016,宜侯夨青铜簋,中国国家博物馆,2021,museum_catalog,https://www.chnmuseum.cn/zp/zpml/kgfjp/202108/t20210802_250932.shtml,MUSEUM_TEXT_READ,12行126字/迁侯于宜/迁封及赏赐
+SRC-017,宜侯夨簋,镇江博物馆,2016,museum_catalog,https://www.zj-museum.com.cn/zjbwg/zjbwg/zs/jpww/qtq/2016/08/23/8a7aef5956b4fe6f0156b565640005aa.html,MUSEUM_TEXT_READ,1954丹徒出土/共126字现存118字的不同计数
+SRC-018,宜侯夨簋中宜非江南吴国新考,姚草鲜,2023,academic_article,https://ccj.pku.edu.cn/article/info?id=365288187,ABSTRACT_READ,古代文明2023年4期57-65+154;宜在河南宜阳是作者主张
+SRC-019,西周封国徙封的文献举证——以宜侯夨簋铭文等四篇文献为中心,于薇,2013,academic_article,https://zgld.cbpt.cnki.net/portal/journal/portal/client/paper/0412ec2d26f42deefefc2e0a08251f76,ABSTRACT_READ,中国历史地理论丛2013年1期25-33+39;迁侯于宜是徙封证据
+SRC-020,宜侯夨簋学案综理,王一凡,2018,academic_article_online,https://www.fdgwz.org.cn/Web/Show/4236,TEXT_READ,多种初期铭文释读/地望与器物可辨认字数的历史
+SRC-021,宜侯夨簋铭文相关史地国族问题补论,田率,2020,museum_research_abstract,https://www.chnmuseum.cn/yj/xscg/xslw/202001/t20200106_187360.shtml,ABSTRACT_READ,讨论某些铭文字形释读和国族源流
+SRC-022,殷卜辞所谓方方献疑：文献2025年第1期论文摘要,李林,2025,academic_abstract,https://www.nlc.cn/pcab/xctg/bd/20250120_2642698.shtml,ABSTRACT_ONLY,国家图书馆目录摘要提供殷虚文字乙编107旧读与新释线索，原片未见
+SRC-023,利簋珷非合文补说,子喬,2017,academic_article_online,https://www.fdgwz.org.cn/Web/Show/3107,TEXT_READ,同文列何尊集成6014和宜侯夨簋集成4320
+SRC-024,最早的中国：夏商西周时期的中国观,赵永春、迟安然,2021,academic_abstract,https://xnzs.cbpt.cnki.net/portal/journal/portal/client/paper/8cba571bb2d4baee39da5db06eb63c26,ABSTRACT_READ,最早中国的多义性；不可断言仅为现代政治国名
+SRC-025,有关商与𢀛方关系的甲骨刻辞之整理与研究,李发,2010,academic_article_online,https://www.fdgwz.org.cn/Web/Show/1334,TEXT_READ,已有卜辞目录号线索；地望推断争议、断辞残缺问题
