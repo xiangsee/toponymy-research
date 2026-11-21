@@ -1,0 +1,12 @@
+claim_id,statement,source_ids,verification_status,not_established,verification_next
+P1A-C001,东汉郡名六类的文字经水经注引汉官保存,SRC-006|SRC-011,TEXT_CHECKED,不是秦朝制定的统一命名法,比对汉官仪不同传本
+P1A-C002,六类所研究的对象主要是历代郡名,SRC-006|SRC-011,TEXT_CHECKED,不覆盖所有自然地名、村落和族氏名,查后续地名学史对六类的使用范围
+P1A-C003,六类列表中的郡国有后汉所置，不能当秦郡名录,SRC-006|SRC-011|SRC-012,INTERPRETIVE_NEEDS_COLLATION,须核陈国吴郡具体设置年代和校勘注记,点校水经注疏及汉书后汉书置郡年表
+P1A-C004,汉书记华阴由阴晋经宁秦至华阴的沿革,SRC-005,TEXT_CHECKED,未证县域边界完全相同,纸本校订卷页及他书记载
+P1A-C005,汉书在华阴条称太华山在南,SRC-005,TEXT_CHECKED,地理方位记述本身不足以封闭词源,结合汉代华山地望和现代地名学研究
+P1A-C006,元和郡县图志现存传本另记唐代华阴一度改仙掌,SRC-007,TEXT_CHECKED,唐代传本缺图且经清代整理,核纸本校勘本与唐代史料
+P1A-C007,汉书汝南郡条记录上蔡为故蔡国,SRC-005,TEXT_CHECKED,是汉代旧国承继记载，非商周原始词源证明,核战国两周材料及方国考证
+P1A-C008,汉书敦煌瓜州与美瓜的关联记载明确标记为杜林观点,SRC-005,TEXT_CHECKED,不可把杜林释义误写成班固对瓜州得名的确定证明,核杜林时代及引文版本
+P1A-C009,王伟研究提出商周族地同名与地名向国邑名姓氏等转化,SRC-003,SECONDARY_READ,尚未逐件追踪出土文物编号与释读,选2-3甲骨金文案例追索原始释文
+P1A-C010,元和郡县图志原图已亡且部分卷帙有缺,SRC-007,TEXT_CHECKED_LATE_TRANSMISSION,此处依据清四库本提要，非李吉甫原序,补核传本系统与现代校勘本
+P1A-C011,CHGIS时间序列描述覆盖秦统一至清末行政区划,SRC-013,BIBLIOGRAPHY_LOCATED,GIS用于时间空间定位，不证明古代名称语义,检查许可协议和地点追溯数据结构
