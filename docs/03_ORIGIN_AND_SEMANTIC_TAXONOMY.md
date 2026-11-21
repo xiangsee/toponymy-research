@@ -89,3 +89,15 @@ NEW_NAME、RENAME、REINSTATE、ALIAS、BORROW、TRANSFER、SPLIT、MERGE、EXPA
 新增关系类型：SAME_GRAPH、SAME_NAME_FORM、MULTIPLE_ROLES_ATTESTED、REFERENT_IDENTIFICATION_HYPOTHESIS、HISTORICAL_DERIVATION_HYPOTHESIS、DERIVATION_SUPPORTED、DISPUTED_LOCATION、UNRESOLVED_DIRECTION。
 
 严格按“古字形→语境句法→专名功能→历史指称→传承因果”五层审查。见 [方法协议](methods/NAME_ROLE_PROVENANCE_PROTOCOL.md)、[C035目](../cases/C035_MU.md)、[C036无终](../cases/C036_WUZHONG.md)。
+
+## H. 双重同一性：文物著录别名 vs 历史名称实体（P1-A v0.5）
+
+**物证著录图（物证 → 不同著录号）**：以甲骨片或经证实的缀合组为对象，链接不同著录书的编号、正反面、藏地、图片、版本。2026-10-31复旦“四方会同”及中央研究院材料来源表是合适的核验入口；仅定位渠道，不意味着已经验证某个编号的全部旧著录。
+
+**历史指称图（文字用例 → 人物、族群、地点等）**：相同字形“目”“无终”出现在不同材料，不能在导入时按字形做同一实体合并；每一条关系都记录“同字／同名／同地／承继推断”何种层级及否证材料。
+
+新增独立于起源、语义、事件分类的关系类型：`CATALOG_ALIAS_CONFIRMED`、`CATALOG_LOOKUP_PENDING`、`SAME_FORM_ONLY`、`COMPETING_HYPOTHESES`、`LATER_COMMENTARY_ATTESTED`、`HISTORICAL_CONTINUITY_UNPROVEN`。
+
+**重要反证**：国家图书馆实物核验甲骨缀合504组中发现39组误缀，说明“已有著录关系”本身亦可修正。这一数字仅对应国图核验样本，不能换算为甲骨著录整体误缀率。
+
+研究札记见 [P1A_05](research/P1A_05_CATALOG_PROVENANCE_AND_ENTITY_IDENTITY.md)。
