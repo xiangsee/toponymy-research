@@ -38,13 +38,15 @@ def validate():
     sources = rows_from("data/source_registry.csv")
     claims = rows_from("data/p1a_claim_register.csv")
     witnesses = rows_from("data/p1a_inscription_register.csv")
-    if not all((cases, sources, claims, witnesses)):
+    attestations = rows_from("data/p1a_name_attestations.csv")
+    if not all((cases, sources, claims, witnesses, attestations)):
         raise ValueError("Research registers cannot be empty")
 
     case_ids = required_unique(cases, "case_id", "case")
     source_ids = required_unique(sources, "source_id", "source")
     claim_ids = required_unique(claims, "claim_id", "claim")
     witness_ids = required_unique(witnesses, "object_id", "inscription witness")
+    attestation_ids = required_unique(attestations, "attestation_id", "name attestation")
     for line, case in enumerate(cases, 2):
         if not (case.get("name_zh") or "").strip():
             raise ValueError(f"Missing name at line {line}")
@@ -66,13 +68,24 @@ def validate():
         if not (witness.get("verification_next") or "").strip():
             raise ValueError(f"Missing witness verification_next at line {line}")
 
+    for line, attestation in enumerate(attestations, 2):
+        case_id = (attestation.get("case_id") or "").strip()
+        if case_id not in case_ids:
+            raise ValueError(f"attestation line {line}: unknown case {case_id!r}")
+        source_refs(attestation.get("source_ids", ""), source_ids, "attestation", line)
+        for field in ("catalog_identifier", "role_hypothesis", "source_review_level",
+                      "not_established", "verification_next"):
+            if not (attestation.get(field) or "").strip():
+                raise ValueError(f"attestation line {line}: missing {field}")
+
     with (ROOT / "data/toponym_case.schema.json").open(encoding="utf-8") as handle:
         schema = json.load(handle)
     if schema.get("type") != "object":
         raise ValueError("Expected object schema")
 
     print(f"OK: {len(case_ids)} cases, {len(source_ids)} sources, "
-          f"{len(claim_ids)} claims, {len(witness_ids)} inscription witnesses")
+          f"{len(claim_ids)} claims, {len(witness_ids)} inscription witnesses, "
+          f"{len(attestation_ids)} name attestations")
     print("Reference IDs, CSV and JSON syntax checked.")
     print("This does NOT validate historical facts, epigraphic readings or geographic identification.")
 
