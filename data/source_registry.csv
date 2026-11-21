@@ -1,0 +1,5 @@
+source_id,title,author_or_institution,year,source_type,url,verification,notes
+SRC-001,地名管理条例（国务院令第753号）,国务院,2022,regulation,https://www.beijing.gov.cn/zhengce/gwywj/202204/t20220421_2684964.html,URL_LOCATED,当前地名法规；不证明历史词源
+SRC-002,中国古今地名数据描述规范 WH/T 85-2019,文化和旅游部,2019,industry_standard,https://zwgk.mct.gov.cn/zfxxgkml/hybz/202012/W020190911332290837306.pdf,URL_LOCATED,数据结构基线
+SRC-003,商周地名的来源与衍化及其史学价值——以甲骨金文资料为中心,王伟,2019,academic_article,https://cssn.cn/lsx/lsx_zgs/202210/t20221024_5552572.shtml,URL_LOCATED,商周研究；具体论点仍需逐项复核
+SRC-004,地名管理条例（1986年）,国务院,1986,regulation,https://xzfg.moj.gov.cn/front/law/detail?LawID=761,URL_LOCATED,现代地名管理史对照
