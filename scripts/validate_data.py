@@ -42,13 +42,15 @@ def validate():
     qin_han_events = rows_from("data/p1b_qin_han_name_events.csv")
     lifecycle_events = rows_from("data/p1b_lifecycle_events.csv")
     qiao_transfers = rows_from("data/p1c_qiao_name_transfers.csv")
+    sui_tang_events = rows_from("data/p1d_sui_tang_name_events.csv")
     name_referents = rows_from("data/p1b_name_referents.csv")
     referent_relations = rows_from("data/p1b_name_referent_relations.csv")
     catalog_queries = rows_from("data/p1a_catalog_queries.csv")
     relations = rows_from("data/p1a_historical_name_relations.csv")
     if not all((cases, sources, claims, witnesses, attestations,
                 catalog_queries, relations, qin_han_events,
-                name_referents, referent_relations, lifecycle_events, qiao_transfers)):
+                name_referents, referent_relations, lifecycle_events, qiao_transfers,
+                sui_tang_events)):
         raise ValueError("Research registers cannot be empty")
 
     case_ids = required_unique(cases, "case_id", "case")
@@ -61,6 +63,7 @@ def validate():
     event_ids = required_unique(qin_han_events, "event_id", "Qin-Han event")
     lifecycle_event_ids = required_unique(lifecycle_events, "event_id", "lifecycle event")
     qiao_transfer_ids = required_unique(qiao_transfers, "record_id", "qiao transfer")
+    sui_tang_event_ids = required_unique(sui_tang_events, "event_id", "Sui-Tang event")
     referent_ids = required_unique(name_referents, "referent_id", "name referent")
     ref_relation_ids = required_unique(referent_relations, "relation_id", "referent relation")
     for line, case in enumerate(cases, 2):
@@ -162,6 +165,15 @@ def validate():
             if not (transfer.get(field) or "").strip():
                 raise ValueError(f"qiao transfer line {line}: missing {field}")
 
+    for line, event in enumerate(sui_tang_events, 2):
+        if event.get("case_id") not in case_ids:
+            raise ValueError(f"Sui-Tang event line {line}: unknown case {event.get('case_id')!r}")
+        source_refs(event.get("source_ids", ""), source_ids, "Sui-Tang event", line)
+        for field in ("name_form", "admin_generic", "date_or_range", "event_type",
+                      "source_status", "not_established", "verification_next"):
+            if not (event.get(field) or "").strip():
+                raise ValueError(f"Sui-Tang event line {line}: missing {field}")
+
     with (ROOT / "data/toponym_case.schema.json").open(encoding="utf-8") as handle:
         schema = json.load(handle)
     if schema.get("type") != "object":
@@ -173,7 +185,8 @@ def validate():
           f"{len(query_ids)} catalog queries, {len(relation_ids)} proposed name relations, "
           f"{len(event_ids)} Qin-Han name events, "
           f"{len(referent_ids)} name referents, {len(ref_relation_ids)} referent links, "
-          f"{len(lifecycle_event_ids)} lifecycle events, {len(qiao_transfer_ids)} qiao-name transfers")
+          f"{len(lifecycle_event_ids)} lifecycle events, {len(qiao_transfer_ids)} qiao-name transfers, "
+          f"{len(sui_tang_event_ids)} Sui-Tang name events")
     print("Reference IDs, CSV and JSON syntax checked.")
     print("This does NOT validate historical facts, epigraphic readings or geographic identification.")
 
