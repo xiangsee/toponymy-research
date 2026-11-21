@@ -1,0 +1,13 @@
+attestation_id,case_id,name_form,time_period,record_type,catalog_identifier,role_hypothesis,role_status,findspot,usage_context,candidate_geolocation,source_ids,source_review_level,not_established,verification_next
+A-M001,C035,目,晚商,oracle,合集165正,COMMON_NOUN_EYE,LEXICON_READING,UNKNOWN,eye/disease context,UNLOCATED,SRC-026,LEXICON_TEXT,not a place,check original oracle
+A-M002,C035,目,晚商,oracle,合集6195,VERB_OBSERVE,LEXICON_READING,UNKNOWN,observation of rival fang,NOT_A_GEOLOCATION,SRC-026|SRC-028,SPECIALIST_TRANSCRIPTION,6194 variant identifier needs reconciliation,compare 6194 and 6195 original
+A-M003,C035,子目,晚商,oracle,合集14034,PERSON_NAME,SCHOLARLY_READING,UNKNOWN,divination concerning person,UNLOCATED,SRC-027|SRC-028,SPECIALIST_TRANSCRIPTION,not automatically a clan or place,compare inscription and context
+A-M004,C035,目,晚商,oracle,合集29285,HUNTING_PLACE,SCHOLARLY_READING,UNKNOWN,王田猎至于目北,DISPUTED_OR_UNKNOWN,SRC-027,SPECIALIST_TRANSCRIPTION,modern geolocation unknown,check oracle image
+A-M005,C035,目,晚商,oracle,合集29286,HUNTING_PLACE,SCHOLARLY_READING,UNKNOWN,目地与田猎语境,DISPUTED_OR_UNKNOWN,SRC-027,SPECIALIST_TRANSCRIPTION,modern geolocation unknown,check oracle image
+A-M006,C035,目,晚商,oracle,合集33367,HUNTING_PLACE,SCHOLARLY_READING,UNKNOWN,王其田目,DISPUTED_OR_UNKNOWN,SRC-027|SRC-028|SRC-029,SPECIALIST_TRANSCRIPT_MULTIPLE,not proof that Mu clan preceded place,check original rubbing and date
+A-M007,C035,目,商周,bronze_vessel,殷周金文集成7494 目爵,CLAN_INSCRIPTION,SCHOLARLY_READING,UNKNOWN,目爵族氏铭文,UNLOCATED,SRC-026|SRC-030,CATALOG_INDIRECT,no observed casting or dating,verify bronze rubbing catalog
+A-W001,C036,亡终/无终,商代中期(论文定年),bronze_weapon,殷周金文集成10881 无终戈,CLAN_INSCRIPTION,SCHOLARLY_READING,1965陕西绥德墕头村墓葬,无终族氏铭文,NOT_SAME_AS_FINDSPOT,SRC-031|SRC-032,BRONZE_JOURNAL_TEXT_AND_IMAGE,findspot not ancestral homeland,verify catalog and archaeological report
+A-W002,C036,亡终/无终,商代,oracle,合集4307反,CLAN_OR_GROUP_HYPOTHESIS,SECONDARY_REFERENCE,UNKNOWN,商代无终活动的卜辞线索,UNKNOWN,SRC-032,JOURNAL_CITATION_ONLY,original oracle text not independently checked,find original oracle image
+A-W003,C036,无终子,春秋,transmitted_text,左传襄公四年,POLITICAL_TITLE,TEXT_LOCATED,N/A,无终子嘉父遣使请和诸戎,UNRESOLVED,SRC-035,CLASSICAL_TRANSMITTED_TEXT,not contemporaneous Shang clan proof,collate text and geography
+A-W004,C036,无终,汉代,transmitted_geography,汉书地理志右北平郡无终县,ADMIN_COUNTY,TEXT_LOCATED,N/A,无终县 故无终子国,LOCUS_DISPUTED,SRC-038,CLASSICAL_TEXT,not proven same as Shang bronze name referent,check historical gazetteers and CHGIS
+A-W005,C036,无终,唐代注释,commentary,后汉书吴汉传李贤注,ANCIENT_ETYMOGRAPHY,LATER_INTERPRETATION,N/A,无终山名因为国号汉为县名,HYPOTHESIS,SRC-034,LATER_COMMENTARY,not original creation event,compare earlier mountain attestations
