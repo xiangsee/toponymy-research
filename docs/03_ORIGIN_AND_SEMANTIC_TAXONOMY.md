@@ -174,3 +174,17 @@ NEW_NAME、RENAME、REINSTATE、ALIAS、BORROW、TRANSFER、SPLIT、MERGE、EXPA
 **不得把**同为“兰陵”的郡和县直接合并，不得将开皇初所有废郡混作589平陈之后，不得由松滋县继续使用推断全部旧侨民持续同一身份。
 
 材料：[隋代专题札记](research/P1C_02_SUI_CONSOLIDATION_QIAO_NAME_OUTCOMES.md)、[名称迁移表](../data/p1c_qiao_name_transfers.csv)。
+
+## N. 隋唐州郡通名改革与地方专名并行（P1-D v1.1）
+
+新增两个**不同**维度：
+- `ADMIN_GENERIC_LABEL`：州／郡／县等行政类别（制度层级及官制语境）；
+- `PLACE_SPECIFIC_NAME`：杭州／余杭、梓州／梓潼等区域专名（不能一律认为同形）。
+
+事件分类：
+- `STATEWIDE_GENERIC_REFORM`：全国州郡通名变更（583、607、618、742、758等需逐案按文献时点校订）；
+- `LOCAL_PROPER_NAME_SELECTION`：特定州郡在制度变化时使用另一专名（杭州→余杭郡；梓州→梓潼郡）；
+- `COUNTY_NAME_PERSISTENT_WHILE_PREFECTURE_ABOLISHED`：624/625潜州撤销而於潜县仍存；
+- `PREFECTURE_SEAT_MOVED_SAME_NAME`：杭州州治由余杭移钱塘，州名未必因此改变。
+
+以上分类解决“行政通名变了/地方专名变了/行政对象的治所变了”三种不同命题。不得以梓潼水的后出古籍释源代替618当时原始命名决定。
