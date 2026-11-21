@@ -26,10 +26,12 @@
 
 ## 研究资料
 
+- [**新：商周出土文字证据压力测试（何尊、宜侯夨簋与卜辞「方」）**](docs/research/P1A_03_SHANG_ZHOU_INSCRIPTION_TEST.md)
+- [C032 何尊：空间和政治名称](cases/C032_HE_ZUN.md)｜[C033 宜侯夨簋：迁封与争议地望](cases/C033_YIHOU_CE_GUI.md)｜[C034 甲骨「方」字释读反例](cases/C034_ORACLE_FANG.md)
+- [铭文来源登记（3条）](data/p1a_inscription_register.csv)｜[研究断言登记（22条）](data/p1a_claim_register.csv)
 - [本轮成果：东汉郡名六分法的来源与局限](docs/research/P1A_01_EARLY_TOPONYM_CLASSIFICATION.md)
 - [第一批基础文献来源卡（8份）](docs/research/P1A_02_SOURCE_CARDS.md)
 - [华阴：历史名称、地理位置与更名的实例](cases/C031_HUAYIN.md)
-- [P1-A 断言证据登记（11条）](data/p1a_claim_register.csv)
 - [研究章程](docs/00_FOUNDING_CHARTER.md)
 - [三阶段工作设计](docs/01_RESEARCH_STAGES.md)
 - [中国地名史研究框架](docs/02_CHINA_RESEARCH_FRAMEWORK.md)
@@ -45,4 +47,4 @@
 
 仓库公开可读。研究笔记与数据标签注明证据状态；不把待验证词源写成事实，不把地方传说当作同时代证据，不凭字面推导民族语词源。仅链接第三方著作、论文和历史文献，不擅自转载全文；公开不等于取得第三方材料的再许可。
 
-**创建日期：2026-11-21**。开放复核、订正和不同学说的证据性讨论。当前版本已进入 P1-A 文献研究 v0.2（持续核验，非结题），不代表最终学术结论。
+**创建日期：2026-11-21**。开放复核、订正和不同学说的证据性讨论。当前版本已进入 P1-A 出土文字实证研究 v0.3（持续核验，非结题），不代表最终学术结论。
