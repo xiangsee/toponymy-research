@@ -37,3 +37,12 @@ SRC-035,左传襄公四年无终子嘉父使晋,左丘明旧题,先秦史书传�
 SRC-036,日知录集释卷三十一无终,顾炎武及后人集释,清,historical_geography_criticism,https://zh.wikisource.org/zh-hans/日知錄集釋/31,CLASSICAL_TEXT_LOCATED,提出无终与右北平太原相距遥远及迁徙疑问
 SRC-037,金文族徽兴起发展与夏商族群融合认同,雒有仓,2022,academic_article_pdf,https://www.zywhyj.cn/Uploads/PdfFile/2022-03-15/623041ff7f1ba.pdf,PDF_SCREEN_READ,中原文化研究2022年第2期；族徽与社会组织之联系属于论文分析
 SRC-038,汉书地理志右北平郡无终县,班固及后世校注,东汉,classical_text,https://www.ziyexing.com/files-5/hanshu/hanshu_39.htm,CLASSICAL_TEXT_LOCATED,汉无终县和故无终子国；须校权威版本及古地望
+SRC-039,四方会同甲骨著录信息库发布与极目复见工具,复旦大学出土文献与古文字研究中心,2026,official_university_announcement,https://newsroom.fudan.edu.cn/_s3/2026/1106/c40a151041/page.psp,OFFICIAL_ANNOUNCEMENT_READ,2026-10-31发布近30万著录覆盖近300种; 本项目尚未实际核对特定合集号结果
+SRC-040,四方会同著录库官网及使用说明,复旦大学出土文献与古文字研究中心,2026,academic_catalog_index,https://fdgwz.org.cn/ZhuLuLab/Home,PUBLIC_DOCUMENTATION_LOCATED,合集号采用五位格式; 现有环境读取动态单条返回未成功
+SRC-041,甲骨文合集材料来源表（检索规则）,中央研究院历史语言研究所/资讯科学研究所,2013,official_catalog_crosswalk,https://xiaoxue.iis.sinica.edu.tw/obm/,OFFICIAL_SEARCH_HELP_READ,合集号查数字部分不含正反; 可多号; 未在本轮实际完成33367等逐号检索
+SRC-042,甲骨文数据库使用简介,中央研究院资讯科学研究所,2013,official_oracle_search_guide,https://xiaoxue.iis.sinica.edu.tw/jiaguwen/Content/Files/jiaguwen-Get_Started.pdf,PDF_DOCUMENTATION_LOCATED,字形与合集号联合筛选; 原始图像未直接验证
+SRC-043,殷墟甲骨文数据库使用说明,古联北京数字传媒/中华书局相关平台,未标年,licensed_oracle_database_help,https://obid.ancientbooks.cn/oracleHelp.jspx,OFFICIAL_HELP_READ,编号图像释文对应; 使用详情显示需机构账号授权; 不推断用户已获权限
+SRC-044,新中国成立以来国家图书馆藏甲骨的整理研究,陈红彦/赵爱学,2023,national_library_scholarly_report,https://www.nopss.gov.cn/n1/2023/1115/c448861-40118773.html,FULL_OFFICIAL_ARTICLE_READ,国图专家复核504组甲骨缀合发现39组误缀; 显示著录和释读可修正
+SRC-045,金文所见：合文字（合书）,徐驳,2024,popular_epigraphy_discussion,https://www.sohu.com/a/751209817_121843268,POPULAR_ARTICLE_READ,将无终戈释为合文字且定商晚期; 与石蝶2006中商断代不同; 不等权威证据
+SRC-046,殷周金文集成书目与编号分卷,日本大学图书馆联合目录CiNii,未标年,bibliographic_catalog,https://ci.nii.ac.jp/ncid/BN04916392,BIBLIOGRAPHIC_CATALOG_READ,集成第13册爵角7313-8310; 第17册戈戟10591-11407; 不代表已核原拓
+SRC-047,殷周金文集成著录检索（民间OCR）,天乙堂,2026网页现存,nonofficial_search_index,https://ebronze.net/,INDEX_PAGE_READ,自称11982件OCR录入且提示错误; 可用作检索线索不直接确证字形或断代
