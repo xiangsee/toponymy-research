@@ -29,3 +29,4 @@ C027,哈尔滨,黑龙江省哈尔滨市,跨语言词源争议,LANGUAGE_CONTACT,D
 C028,成都,四川省成都市,古名延续与词源,UNKNOWN,UNKNOWN,,古名来源及文献互相矛盾处,QUESTION_ONLY,NOT_REVIEWED
 C029,新郑,河南省郑州市新郑市,旧名移植和组合,POLITY|INHERITED,UNKNOWN,BORROW,新旧郑地望、政治移植和名称先后,QUESTION_ONLY,NOT_REVIEWED
 C030,江阴,江苏省无锡市江阴市,山水方位命名,SPATIAL,UNKNOWN,,具体参照地理实体与最早记载,QUESTION_ONLY,NOT_REVIEWED
+C031,华阴,陕西省华阴市,古代政区旧名及山岳方位的复合考察,SPATIAL,UNKNOWN,RENAME|REINSTATE,汉书所载阴晋宁秦华阴与唐代仙掌的文献链及古今地望,IN_RESEARCH,TEXT_CHECKED_NEEDS_EDITION
