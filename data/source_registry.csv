@@ -24,3 +24,16 @@ SRC-022,殷卜辞所谓方方献疑：文献2025年第1期论文摘要,李林,20
 SRC-023,利簋珷非合文补说,子喬,2017,academic_article_online,https://www.fdgwz.org.cn/Web/Show/3107,TEXT_READ,同文列何尊集成6014和宜侯夨簋集成4320
 SRC-024,最早的中国：夏商西周时期的中国观,赵永春、迟安然,2021,academic_abstract,https://xnzs.cbpt.cnki.net/portal/journal/portal/client/paper/8cba571bb2d4baee39da5db06eb63c26,ABSTRACT_READ,最早中国的多义性；不可断言仅为现代政治国名
 SRC-025,有关商与𢀛方关系的甲骨刻辞之整理与研究,李发,2010,academic_article_online,https://www.fdgwz.org.cn/Web/Show/1334,TEXT_READ,已有卜辞目录号线索；地望推断争议、断辞残缺问题
+SRC-026,汉语多功能字库目字形义通解,香港中文大学人文电算研究中心,未标年,lexicographic_database,https://humanum.arts.cuhk.edu.hk/Lexis/lexi-mf/search.php?word=%E7%9B%AE,LEXICON_READ,分别例证合集165正、6195及目爵；原甲骨图未独立核
+SRC-027,读契札记一则,赵鹏,2011,epigraphic_article,https://www.fdgwz.org.cn/Web/Show/1423,SPECIALIST_TEXT_READ,将目的人名与田猎地用法分开；有合集29285、29286、33367
+SRC-028,论甲骨文字形与字词义之关系——以面容器官类字词为例,钱唯真,未核,linguistic_paper,https://clc.thu.edu.tw/download.php?dir=personal_seminar&filename=69dad6017223d51868044ebda1b55f62.pdf&title=,PDF_TEXT_AND_SCREEN_READ,第2页目字不同词义及合集33367；原图未独立核
+SRC-029,甲骨文往语法研究,喻遂生,2019,linguistic_article,https://wxs.swu.edu.cn/info/1024/1362.htm,SPECIALIST_TEXT_READ,合集33367王其田目；地理名词用法的语法研究
+SRC-030,目字源及金文目爵条目,汉典,未标年,digital_dictionary,https://zdic.net/hans/%E7%9B%AE,LEXICON_CATALOG_READ,列集成7494目爵；原金文器物尚未校
+SRC-031,商代中期有铭青铜器探讨（41页）,石蝶,2006,museum_journal_pdf,https://www.dpm.org.cn/Uploads/pdf/5059/T00041_00.pdf,PDF_SCREEN_READ,故宫院刊第41页记无终戈出土绥德藏陕历博和集成10881
+SRC-032,商代中期有铭青铜器探讨（42页）,石蝶,2006,museum_journal_pdf,https://www.dpm.org.cn/Uploads/pdf/5059/T00042_00.pdf,PDF_TEXT_READ_SCREENSHOT_FAILED,该页引裘锡圭亡终释读和合集4307反；原拓待核
+SRC-033,试探无终,韩嘉谷,2006,academic_article,https://wwj.beijing.gov.cn/bjww/resource/cms/article/bjww_362762/10828734/2020071316573265799.pdf,PDF_TEXT_READ_SCREENSHOT_TOO_LARGE,北京文博2006年1期53页起；山名地望和迁徙假说，非定论
+SRC-034,后汉书吴汉传（李贤注）,范晔及李贤,南朝宋/唐注,classical_commentary,https://zh.wikisource.org/zh-hans/後漢書_(四庫全書本)/卷048,CLASSICAL_TEXT_LOCATED,唐注解释无终山名国号及汉县；释源而非原命名事实
+SRC-035,左传襄公四年无终子嘉父使晋,左丘明旧题,先秦史书传本,classical_text,https://www.wenlinshe.com/chapter/gudaiwenyi/zuo-zhuan/xiang-gong/xiang-gong-si-nian.html,CLASSICAL_TEXT_LOCATED,无终子政治行为的传世记载；并非商代族氏直接证据
+SRC-036,日知录集释卷三十一无终,顾炎武及后人集释,清,historical_geography_criticism,https://zh.wikisource.org/zh-hans/日知錄集釋/31,CLASSICAL_TEXT_LOCATED,提出无终与右北平太原相距遥远及迁徙疑问
+SRC-037,金文族徽兴起发展与夏商族群融合认同,雒有仓,2022,academic_article_pdf,https://www.zywhyj.cn/Uploads/PdfFile/2022-03-15/623041ff7f1ba.pdf,PDF_SCREEN_READ,中原文化研究2022年第2期；族徽与社会组织之联系属于论文分析
+SRC-038,汉书地理志右北平郡无终县,班固及后世校注,东汉,classical_text,https://www.ziyexing.com/files-5/hanshu/hanshu_39.htm,CLASSICAL_TEXT_LOCATED,汉无终县和故无终子国；须校权威版本及古地望
