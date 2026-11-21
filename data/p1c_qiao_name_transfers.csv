@@ -2,3 +2,9 @@ record_id,case_id,original_name,original_region,qiao_name,new_region,attested_pe
 QIAO001,C047,兰陵,古山东东海/兰陵郡县旧地,南兰陵,南朝南徐州及晋陵武进有关区域,东晋南朝,OLD_NAME_REUSED_WITH_MIGRANT_ADMIN,SRC-099|SRC-100|SRC-108,CLASSICAL_AND_SCHOLARLY,早期侨置年月/受领迁民/郡治未核,核宋书南齐书胡阿祥专著原文
 QIAO002,C047,南东海,南朝江南侨郡,兰陵郡,梁南徐州,502年,RENAMED_OR_REGULARIZED_QIAO_ADMIN,SRC-104|SRC-105,CHGIS_RECONSTRUCTION,此兰陵郡与旧南兰陵郡关系及502土断范围待核,核梁书武帝纪天监元年条
 QIAO003,C047,兰陵郡,梁南徐州兰陵郡,东海郡,陈南徐州,558年,ADMIN_RENAME,SRC-104,CHGIS_RECONSTRUCTION,县属及实土变化待核,核陈书高帝纪永定二年条
+QIAO004,C047,兰陵县（梁改自武进县）,南徐州曲阿旁相关区域,曲阿县,隋江都郡曲阿辖境,589年,QIAO_COUNTY_ABOLISHED_MERGED,SRC-110|SRC-111,CLASSICAL_TEXT,新旧县界及真实侨籍人口安排待查,核隋书与咸淳毗陵志原县址
+QIAO005,C047,故兰陵县地,唐代原兰陵县部分地域,武进县,唐常州,620年,FORMER_QIAO_LAND_REUSED_NEW_NAME,SRC-111,SONG_GAZETTEER_HISTORICAL_RECORD,重置武进县是否完全恢复原兰陵县全境尚未证实,核新唐书元和郡县图志与唐地望
+QIAO006,C048,庐江郡旧松滋县,安徽境内庐江郡旧地（古地望待核）,江汉侨松滋县,南郡及荆州一带,西晋末/东晋时期,MIGRANT_OLD_COUNTY_NAME_REUSED,SRC-112,QING_GAZETTEER_RETROSPECTIVE,具体侨置初年与直接晋代原始任命未核,核宋书州郡志、晋书地理志和旧唐书
+QIAO007,C048,江左侨河东郡,荆州一带侨置河东郡,河东郡废、松滋县仍见,隋南郡松滋县,589年平陈,QIAO_COMMANDERY_ABOLISHED_COUNTY_NAME_SURVIVES,SRC-110|SRC-112,SUI_CLASSICAL_AND_LATER_GAZETTEER,松滋县具体疆域变化与实土化年份待核,核隋书县条及东晋土断具体年表
+QIAO008,C049,淮南梁郡北谯汝阴等侨郡,寿春及江淮相关区域,诸侨郡并废而寿春县仍见,隋淮南郡寿春,开皇初（非都必589年）,QIAO_COMMANDERY_MERGED_WITH_COUNTY_CONTINUITY,SRC-110,SUI_CLASSICAL_TEXT,不同侨郡是否均属同一侨置性质及准确废置时间待核,宋书与魏书郡县逐一核
+QIAO009,C049,北谯郡,梁全椒一带,北谯改临滁后再改北谯、开皇初郡废,江都郡全椒县,梁至开皇初,MULTIPLE_RENAMES_AND_COMMANDERY_ABOLISH,SRC-110,SUI_CLASSICAL_TEXT,是否与寿春条北谯郡同一行政实体未证,核两条北谯历史地望
