@@ -112,3 +112,13 @@ SRC-110,隋书卷31地理志江都淮南南郡,魏徵等,唐,classical_text,http
 SRC-111,咸淳毗陵志卷一地理沿革,南宋志书编纂者,南宋,classical_local_gazetteer,https://ctext.org/wiki.pl?chapter=330867&if=gb,CLASSICAL_TEXT_READ,589兰陵县并曲阿；620以旧兰陵县地置武进；634并晋陵；686再设武进
 SRC-112,大清一统志卷268松滋故城,清代地理总志编者,清,historical_gazetteer,https://ctext.org/wiki.pl?chapter=576892&if=gb,CLASSICAL_GAZETTEER_READ,追述庐江旧松滋侨置到江汉、隋郡废县名保留；清代解释非晋代原文
 SRC-113,武进故地考,王文楚、薛国屏,2025,regional_scholarly_pdf,https://jssdfz.jiangsu.gov.cn/attach/0/cb91dd403cba4f45bd2590260e05e8ac.pdf,SEARCH_EXCERPT_ONLY_PDF_NOT_SCREENED,讨论隋兰陵县废和唐武进复置及县治旧址争议，未完成PDF截图和全文页校
+SRC-114,隋书卷二十九地理志上开皇大业改制,魏徵等,唐,classical_text,https://www.zhonghuashu.com/wiki/隋書/卷29,CLASSICAL_TEXT_READ,隋开皇三年废郡及大业改郡的历史记载；不是原始诏书
+SRC-115,旧唐书卷四十杭州余杭郡及於潜潜州,刘昫等,后晋,classical_admin_geography,https://zh.wikisource.org/zh-hans/舊唐書/卷40,CLASSICAL_TEXT_READ,621杭州742余杭郡758杭州，潜州624置625废，州治迁钱塘
+SRC-116,旧唐书卷四十一梓州梓潼郡,刘昫等,后晋,classical_admin_geography,https://zh.wikisource.org/zh-hans/舊唐書/卷41,CLASSICAL_TEXT_READ,618梓州742梓潼郡758复梓州，记以梓潼水为名
+SRC-117,廿二史考异卷唐书地理志州郡互改考辨,钱大昕,清,historical_textual_criticism,https://ctext.org/wiki.pl?chapter=972815&if=gb&remap=gb,CLASSICAL_COMMENTARY_READ,天宝州改郡乾元郡改州与宋代郡名留存不同；作者是后人考订
+SRC-118,CHGIS余杭郡742至757历史地名,复旦CHGIS,数据库现行,historical_gis,https://tgaz.fudan.edu.cn/tgaz/placename/hvd_32353,CHGIS_RECORD_READ,唐余杭郡742-757独立记录及辖县，空间边界为现代复原
+SRC-119,CHGIS杭州州758至899历史地名,复旦CHGIS,数据库现行,historical_gis,https://tgaz.fudan.edu.cn/tgaz/placename/hvd_90108,CHGIS_RECORD_READ,杭州758年复州，唐代边界为建模
+SRC-120,CHGIS杭州州治758至1128,复旦CHGIS,数据库现行,historical_gis,https://tgaz.fudan.edu.cn/tgaz/placename/hvd_32336,CHGIS_RECORD_READ,唐杭州州治钱塘与辖县变化，点与辖区应分开
+SRC-121,旧唐书卷四十百衲本异文杭州州治,古籍整理出版单位,现今数字整理,edited_classical_text,https://pinguji.cn/bookContent/13a74ca05d054c9a93c6a55e5741dca5_46c5e77be1e646fcb58979b13ba492a0.html,TEXT_WITH_COLLATION_NOTES_READ,余杭郡杭州条存在为/属字异文，尚未全面核点校本
+SRC-122,中国地方志2020第6期两浙唐初州县重组,中国地方志编辑部,2020,academic_journal_excerpt,https://difangzhi.cn/qk/qkgl/zgnjyj201901_128964/202102/W020210220554993203599.pdf,SEARCH_SNIPPET_ONLY_PDF_NOT_SCREENED,唐初江南州县大规模临时设废及后续制度化；仍需PDF页面核验
+SRC-123,隋唐中国经济通史州县变更摘录,湖南人民出版社,2026,economic_history_book_pdf,https://www.suiempire.com/downloads/zgjjts.pdf,SEARCH_SNIPPET_ONLY_PDF_NOT_SCREENED,一般统计与地理政区数量有版本口径差异，不作本轮实证依据
