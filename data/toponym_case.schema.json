@@ -1,0 +1,244 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Xiangsee Toponym Research Case v0.1",
+  "description": "独立区分名称、地理对象、行政建置、词义与证据。允许未知与争议。",
+  "type": "object",
+  "required": [
+    "case_id",
+    "name_forms",
+    "geographic_entities",
+    "claims",
+    "research_status"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^C[0-9]{3,}$"
+    },
+    "name_forms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "form",
+          "language",
+          "script"
+        ],
+        "properties": {
+          "form": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string"
+          },
+          "script": {
+            "type": "string"
+          },
+          "first_attested": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "geographic_entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "object_id",
+          "object_type"
+        ],
+        "properties": {
+          "object_id": {
+            "type": "string"
+          },
+          "object_type": {
+            "type": "string"
+          },
+          "region": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "geometry_status": {
+            "enum": [
+              "VERIFIED",
+              "APPROXIMATE",
+              "DISPUTED",
+              "UNKNOWN"
+            ]
+          },
+          "valid_from": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "valid_to": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "origin_hypotheses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "hypothesis": {
+            "type": "string"
+          },
+          "mechanism_tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "enum": [
+              "PROPOSED",
+              "EVIDENCE_FOUND",
+              "CHECKED",
+              "DISPUTED",
+              "REJECTED",
+              "UNKNOWN"
+            ]
+          },
+          "supporting_source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "counter_source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "semantic_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "time_scope": {
+            "type": "string"
+          },
+          "language": {
+            "type": "string"
+          },
+          "level": {
+            "enum": [
+              "CHARACTER",
+              "WORD",
+              "TOPONYM"
+            ]
+          },
+          "meaning": {
+            "type": "string"
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "historical_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "event_type": {
+            "type": "string"
+          },
+          "event_date_or_range": {
+            "type": "string"
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claim_id",
+          "claim",
+          "status"
+        ],
+        "properties": {
+          "claim_id": {
+            "type": "string"
+          },
+          "claim": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "PROPOSED",
+              "EVIDENCE_FOUND",
+              "CHECKED",
+              "DISPUTED",
+              "REVISED",
+              "STABLE",
+              "REJECTED"
+            ]
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "counterevidence": {
+            "type": "string"
+          },
+          "verification_next": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "research_status": {
+      "enum": [
+        "QUESTION_ONLY",
+        "IN_RESEARCH",
+        "NEEDS_REVIEW",
+        "CHECKED",
+        "DISPUTED"
+      ]
+    },
+    "last_reviewed": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
