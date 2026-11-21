@@ -61,3 +61,17 @@ SRC-059,汉书补注卷一下：新丰释源引应劭,王先谦汇集应劭等,�
 SRC-060,太平御览卷一百七十：无锡有锡,李昉等,宋,classical_quotation,https://zh.wikisource.org/zh-hans/太平御覽/0170,CLASSICAL_TEXT_LOCATED,引汉志无锡莽曰有锡及谶语属不同层级的古代解释
 SRC-061,秦始皇实施书同文字的年月新考——从里耶秦简所记廿六年及其用字特征考证,陈正贤,2020,academic_article,https://fdgwz.org.cn/Web/Show/4556,ACADEMIC_ABSTRACT_READ,书同文字进程与某政区名称管理同步性不得预设
 SRC-062,迁陵洞庭郡简国家博物馆展出报道,红网/国博展览资料,2019,museum_exhibition_report,https://xx.rednet.cn/content/2019/08/07/5794161.html,EXHIBIT_REPORT_READ,展览列迁陵洞庭郡简释文，说明出土地方官署真实使用
+SRC-063,汉书地理志上在线传本，河南河东河内,班固及后世整理,东汉,classical_text,https://www.shiwens.cn/bookv_19604.html,CLASSICAL_TEXT_LOCATED_NEEDS_EDITION,河南郡故秦三川高帝更名；河东秦置；河内殷国更名；非权威点校原本
+SRC-064,华阳国志四部丛刊本卷二汉中志,常璩及传本编校,东晋,classical_source_variant,https://zh.wikisource.org/zh-hans/華陽國志_(四部叢刊本)/卷第二,TEXT_VARIANT_LOCATED,因水名也；周赧王二年原传本文字；须校注本
+SRC-065,华阳国志卷二校注本汉中志,常璩及后代校注,东晋后世校注,classical_edited_text,https://zh.wikisource.org/zh-hans/華陽國志/卷二,TEXT_VARIANT_LOCATED,周赧王二年校三年；更早汉中郡建置待原始史料
+SRC-066,我国省区名称的来源（旧作2019转载）,谭其骧等,原刊年份待核,historical_geography_article,https://www.aisixiang.com/data/115498.html,HISTORICAL_ARGUMENT_READ,河南多时间多空间指向；转载文章旧省区数不得作为2026现行状况
+SRC-067,汉中县市区名称由来,郭鹏、刘新民/汉中市地方志办公室,2025,regional_history_official,https://hzdqw.hanzhong.gov.cn/hzdfz/xzlsh/202601/e810fe69a1764277ad7809f717b63242.shtml,LOCAL_OFFICIAL_HISTORY_READ,称楚置汉中郡秦前312年接收；古地望仍须原文考证
+SRC-068,跟着典籍游汉中一：一个地名如何成为民族的称谓,汉中市地方志办公室地情信息科,2026,local_government_story,https://hzdqw.hanzhong.gov.cn/hzdfz/zjsy/202603/221dbd3775ba4970ad11cdaead2bed1d.shtml,LOCAL_STORY_READ,提公元前451年筑城及汉水、汉王；筑城不等于郡始置
+SRC-069,张家山汉简二年律令秩律地名考释三则,潘国立,2025,peer_reviewed_academic_abstract,https://www.lsdlyj.com.cn/CN/10.20166/j.issn.2096-6822.L20230227,OFFICIAL_ABSTRACT_ONLY,2025年第4期129-132页；2026年1月上线；梁异地同名与卷迁治是作者主张，全文未读
+SRC-070,二年律令秩律的历史地理意义,周振鹤,2003,academic_abstract,https://xsyk.cbpt.cnki.net/portal/journal/portal/client/paper/1225117efb1ccf5298417e490faa5fb0,JOURNAL_ABSTRACT_ONLY,讨论汉初县等级、秦汉县沿革意义；未读正式全文
+SRC-071,张家山汉简秩律县道邑缺失问题辨析,马孟龙,2022,academic_excerpt,https://www.fx361.com/page/2022/0705/16700760.shtml,OPENING_PARAGRAPHS_ONLY,吕后元年直辖280余县道邑、完整性争论；完整全文需取得
+SRC-072,从东西对立到内外有别：西汉国家政治地理结构演变,马孟龙,2024,academic_bibliography,https://history.fudan.edu.cn/info/3241/13121.htm,PUBLICATION_METADATA_LOCATED,社会科学2024年第一期52-68页；论行政排序，正文待核
+SRC-073,二年律令简书性质探析,李婧嵘,2016,journal_abstract,https://lwbi.cbpt.cnki.net/portal/journal/portal/client/paper/4052cac911ffc4d92cf928f6ab315094,ACADEMIC_ABSTRACT_ONLY,提出二年律令为吕后二年前后随葬抄录而非墓主生前实用，抄写与名录内容时点可不同
+SRC-074,汉中与汉族称谓,郭鹏、刘新民/汉中市地方志办公室,2025,regional_history_critical_discussion,https://hzdqw.hanzhong.gov.cn/hzdfz/xzlsh/202601/a39ffc54a14d4a1d9e2d17d3a083acb3.shtml,LOCAL_HISTORY_READ,汉中与汉王号及民族称谓关联但并非汉民族唯一发源地
+SRC-075,史记高祖本纪项羽封刘邦为汉王,司马迁及后代传本,西汉,classical_text,https://www.chinakongzi.org/kzsf/wxxs/mingpian/shiji/200705/t20070524_25239.htm,CLASSICAL_TEXT_LOCATED,王巴蜀汉中、都南郑；不能直接推现代民族形成
+SRC-076,汉书地理志补注关于三川河洛伊的引用,历代注家／吴氏整理,清代汇编,historical_commentary,https://ctext.org/wiki.pl?chapter=5098299&if=gb&remap=gb,SEARCH_TEXT_ONLY_NEEDS_EDITION,韦昭有河洛伊故曰三川为古代释源不是秦设郡现场诏令
