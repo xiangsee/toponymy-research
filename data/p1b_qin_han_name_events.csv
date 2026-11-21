@@ -1,0 +1,11 @@
+event_id,case_id,event_type,time_scope,time_basis,name_before,name_after,administrative_context,source_ids,evidence_status,not_established,verification_next
+QH-E001,C037,ADMIN_ATTESTATION,秦王政二十五年至秦末,当代文书及后世研究,洞庭郡,洞庭郡,秦代郡名见里耶迁陵行政简牍,SRC-049|SRC-052|SRC-062,PRIMARY_RECORD_PUBLISHED,不知郡界准确全貌和名称首次出现时间,核不同简号完整释文
+QH-E002,C038,COUNTY_ESTABLISHMENT_IN_QIN,秦王政二十五年/前222年,简8-755至8-759今迁陵廿五年为县,旧楚地政区未定,秦洞庭郡迁陵县,秦接管后将迁陵纳入县制,SRC-053|SRC-058,INSCRIPTION_SCHOLARLY_CITED,不能推断楚时没有叫迁陵的县或地名,核8-755至8-759完整图版校释
+QH-E003,C038,NAME_CONTINUITY,秦代→西汉,秦简与汉书的跨时段复见,秦洞庭郡迁陵,西汉武陵郡迁陵,县名重复出现而上级郡行政组织不同,SRC-052|SRC-056|SRC-005,CROSS_SOURCE_ATTESTED,不保证县界治所不变及名称同物直接传承,核秦汉县治/辖界及隶属
+QH-E004,C038,RENAME,新莽时期,汉书莽曰迁陆,迁陵,迁陆,王莽更名记载,SRC-005,HANSHU_LATER_RECORD,更名具体年月和复名条令待核,查新莽政令和复名史料
+QH-E005,C039,ESTABLISHMENT,高祖七年/前200年（汉书记载）,汉书地理志,骊邑,新丰（县置）,汉京兆尹新丰旧有骊邑与骊戎历史,SRC-005,HANSHU_LATER_RECORD,置县和正式命名不一定同一事件,与史记高祖本纪核时间
+QH-E006,C039,RENAME,太上皇去世后（史书记载）,史记高祖本纪,郦邑,新丰,史记记更命郦邑曰新丰,SRC-054,SHIJI_LATER_RECORD,汉书七年置与史记更命时间不同不能直接合并,核汉书高帝纪应劭注原文
+QH-E007,C039,PLACE_MEMORY_TRANSFER,汉初（释源时代为东汉）,应劭旧丰迁人仿街里解释,丰（旧里）,新丰（新地）,政治迁民及复制原乡聚落结构,SRC-059|SRC-005,LATER_ETYMOGRAPHIC_ACCOUNT,未找到汉初同时代建城迁民诏令,寻找考古和汉初行政记载
+QH-E008,C040,RENAME,公元14年暂定,CHGIS以王莽改制时间推定,无锡,有锡,新莽地方县名更改,SRC-057|SRC-005,CHGIS_PROPOSED_DATE,不能认定14年某月下诏及古治所从未变化,追索新莽诏令日期
+QH-E009,C040,RESTORATION,公元23年为CHGIS恢复旧名的模型推定,CHGIS新莽政权结束及复名处理,有锡,无锡,政权更替后恢复旧名,SRC-057,CHGIS_INFERRED_NOT_DIRECT_DECREE,未见直接复名诏令日期,查后汉初郡县志与相关古文书
+QH-E010,C037,CROSS_PERIOD_COMPARISON,秦→汉,游逸飞2015县名对照，复旦CHGIS分期,秦洞庭郡,汉武陵郡,地域与若干县名重叠，整体直接改名尚未证明,SRC-052|SRC-056,SCHOLARLY_INFERENCE,不能假定行政实体/郡治/郡界完全一致,搜松柏汉墓和后续秦简拓片
