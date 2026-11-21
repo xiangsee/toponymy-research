@@ -39,10 +39,11 @@ def validate():
     claims = rows_from("data/p1a_claim_register.csv")
     witnesses = rows_from("data/p1a_inscription_register.csv")
     attestations = rows_from("data/p1a_name_attestations.csv")
+    qin_han_events = rows_from("data/p1b_qin_han_name_events.csv")
     catalog_queries = rows_from("data/p1a_catalog_queries.csv")
     relations = rows_from("data/p1a_historical_name_relations.csv")
     if not all((cases, sources, claims, witnesses, attestations,
-                catalog_queries, relations)):
+                catalog_queries, relations, qin_han_events)):
         raise ValueError("Research registers cannot be empty")
 
     case_ids = required_unique(cases, "case_id", "case")
@@ -52,6 +53,7 @@ def validate():
     attestation_ids = required_unique(attestations, "attestation_id", "name attestation")
     query_ids = required_unique(catalog_queries, "query_id", "catalog query")
     relation_ids = required_unique(relations, "relation_id", "name relation")
+    event_ids = required_unique(qin_han_events, "event_id", "Qin-Han event")
     for line, case in enumerate(cases, 2):
         if not (case.get("name_zh") or "").strip():
             raise ValueError(f"Missing name at line {line}")
@@ -102,6 +104,15 @@ def validate():
             if not (relation.get(field) or "").strip():
                 raise ValueError(f"name relation line {line}: missing {field}")
 
+    for line, event in enumerate(qin_han_events, 2):
+        if event.get("case_id") not in case_ids:
+            raise ValueError(f"Qin-Han event line {line}: unknown case {event.get('case_id')!r}")
+        source_refs(event.get("source_ids", ""), source_ids, "Qin-Han event", line)
+        for field in ("event_type", "time_scope", "time_basis", "evidence_status",
+                      "not_established", "verification_next"):
+            if not (event.get(field) or "").strip():
+                raise ValueError(f"Qin-Han event line {line}: missing {field}")
+
     with (ROOT / "data/toponym_case.schema.json").open(encoding="utf-8") as handle:
         schema = json.load(handle)
     if schema.get("type") != "object":
@@ -110,7 +121,8 @@ def validate():
     print(f"OK: {len(case_ids)} cases, {len(source_ids)} sources, "
           f"{len(claim_ids)} claims, {len(witness_ids)} inscription witnesses, "
           f"{len(attestation_ids)} name attestations, "
-          f"{len(query_ids)} catalog queries, {len(relation_ids)} proposed name relations")
+          f"{len(query_ids)} catalog queries, {len(relation_ids)} proposed name relations, "
+          f"{len(event_ids)} Qin-Han name events")
     print("Reference IDs, CSV and JSON syntax checked.")
     print("This does NOT validate historical facts, epigraphic readings or geographic identification.")
 
