@@ -64,3 +64,18 @@ NEW_NAME、RENAME、REINSTATE、ALIAS、BORROW、TRANSFER、SPLIT、MERGE、EXPA
 - 古代关于酒泉「泉味如酒」及会稽禹会诸侯的解释，是**古人释源材料**，不能未经考证直接当作最初命名事实。
 
 研究札记见 [P1A_01](research/P1A_01_EARLY_TOPONYM_CLASSIFICATION.md)；个案见 [C031华阴](../cases/C031_HUAYIN.md)。
+
+## F. 出土铭文来源的名称功能与历史地望分离（P1-A v0.3）
+
+商周材料要求额外的**名称功能（referent role）**维度：
+- `GEOGRAPHIC_PLACE`：地理地点/地域
+- `POLITICAL_CENTER`：政治中心及天下秩序中的空间区域
+- `POLITY_OR_GROUP`：政治共同体、族群或方国
+- `TITLE_DERIVED_FROM_PLACE`：爵号/封号中使用地名
+- `PERSON_OR_LINEAGE`：人名、族名、氏姓（单独标注是否只是同字）
+- `ABBREVIATION_OR_GENERIC`：简称、泛称、方位词，不一定是专有地名
+- `UNRESOLVED`：字形、句读或指称无法确定
+
+**不能把“字形相同”当成“已证同一实体”**。必须分开记录藏品/原始甲骨来源、铭文中的称谓、具体地望学说及先后次序。
+
+案例：何尊“宅兹中国”见[C032](../cases/C032_HE_ZUN.md)；宜侯夨簋“迁侯于宜”见[C033](../cases/C033_YIHOU_CE_GUI.md)；甲骨「方」字是否专名见[C034](../cases/C034_ORACLE_FANG.md)。
