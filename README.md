@@ -26,7 +26,10 @@
 
 ## 研究资料
 
-- [**新：商周出土文字证据压力测试（何尊、宜侯夨簋与卜辞「方」）**](docs/research/P1A_03_SHANG_ZHOU_INSCRIPTION_TEST.md)
+- [**新：目与无终的族名—地名同形证据及方向争议**](docs/research/P1A_04_MU_WUZHONG_NAME_ROLES.md)
+- [目（C035）](cases/C035_MU.md)｜[无终（C036）](cases/C036_WUZHONG.md)｜[名称功能和谱系证明协议](docs/methods/NAME_ROLE_PROVENANCE_PROTOCOL.md)
+- [12条具体名称用例](data/p1a_name_attestations.csv)｜[最新分级断言](data/p1a_claim_register.csv)
+- [**上轮：商周出土文字证据压力测试（何尊、宜侯夨簋与卜辞「方」）**](docs/research/P1A_03_SHANG_ZHOU_INSCRIPTION_TEST.md)
 - [C032 何尊：空间和政治名称](cases/C032_HE_ZUN.md)｜[C033 宜侯夨簋：迁封与争议地望](cases/C033_YIHOU_CE_GUI.md)｜[C034 甲骨「方」字释读反例](cases/C034_ORACLE_FANG.md)
 - [铭文来源登记（3条）](data/p1a_inscription_register.csv)｜[研究断言登记（22条）](data/p1a_claim_register.csv)
 - [本轮成果：东汉郡名六分法的来源与局限](docs/research/P1A_01_EARLY_TOPONYM_CLASSIFICATION.md)
@@ -47,4 +50,4 @@
 
 仓库公开可读。研究笔记与数据标签注明证据状态；不把待验证词源写成事实，不把地方传说当作同时代证据，不凭字面推导民族语词源。仅链接第三方著作、论文和历史文献，不擅自转载全文；公开不等于取得第三方材料的再许可。
 
-**创建日期：2026-11-21**。开放复核、订正和不同学说的证据性讨论。当前版本已进入 P1-A 出土文字实证研究 v0.3（持续核验，非结题），不代表最终学术结论。
+**创建日期：2026-11-21**。开放复核、订正和不同学说的证据性讨论。当前版本已进入 P1-A 族地同名考证 v0.4（持续核验，非结题），不代表最终学术结论。
