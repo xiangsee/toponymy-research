@@ -11,3 +11,4 @@ A-W002,C036,亡终/无终,商代,oracle,合集4307反,CLAN_OR_GROUP_HYPOTHESIS,S
 A-W003,C036,无终子,春秋,transmitted_text,左传襄公四年,POLITICAL_TITLE,TEXT_LOCATED,N/A,无终子嘉父遣使请和诸戎,UNRESOLVED,SRC-035,CLASSICAL_TRANSMITTED_TEXT,not contemporaneous Shang clan proof,collate text and geography
 A-W004,C036,无终,汉代,transmitted_geography,汉书地理志右北平郡无终县,ADMIN_COUNTY,TEXT_LOCATED,N/A,无终县 故无终子国,LOCUS_DISPUTED,SRC-038,CLASSICAL_TEXT,not proven same as Shang bronze name referent,check historical gazetteers and CHGIS
 A-W005,C036,无终,唐代注释,commentary,后汉书吴汉传李贤注,ANCIENT_ETYMOGRAPHY,LATER_INTERPRETATION,N/A,无终山名因为国号汉为县名,HYPOTHESIS,SRC-034,LATER_COMMENTARY,not original creation event,compare earlier mountain attestations
+A-M008,C035,目,晚商,oracle,合集6946正,RIVAL_GROUP_OR_CLAN,SCHOLARLY_READING,UNKNOWN,乎雀围目 的军事卜辞语境,UNLOCATED,SRC-028,SPECIALIST_INTERPRETATION_PDF_SCREEN_VERIFIED,钱唯真认为与合集33367田猎地或异地同名或战后属地，均尚未证实,check oracle images and historical relation
