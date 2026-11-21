@@ -1,0 +1,4 @@
+object_id,object_name,period,inscription_catalog,findspot,modern_holder,inscription_fact,toponym_token,referent_hypothesis,location_status,source_ids,verification_status,verification_next
+BR001,何尊,西周早期,殷周金文集成6014,陕西宝鸡贾村,宝鸡青铜器博物院,内底12行122字,宅兹中国|成周|大邑商,地理中心与政治空间观念,成周现代地望需单独核验,SRC-014|SRC-015|SRC-023|SRC-024,MUSEUM_TEXT_CHECKED_NEEDS_RUBBING,校集成6014及不同研究的铭文释读
+BR002,宜侯夨簋,西周早期,殷周金文集成4320,江苏丹徒烟墩山,中国国家博物馆,12行126计字/现存118/学者称115可辨,宜|宜侯,地名进入迁封及诸侯爵号,DISPUTED,SRC-016|SRC-017|SRC-018|SRC-019|SRC-020|SRC-021|SRC-023,MUSEUM_TEXT_CHECKED_LOCATION_DISPUTED,校集成4320与1955出土简报并对比地望学说
+OB001,乙编107相关方字,晚商殷墟卜辞,殷虚文字乙编107,殷墟甲骨考古著录对象（原片出土信息待核）,收藏信息待查,旧方方连读被2025学术摘要提出质疑,方,专名/简称/敌对方国泛称未定,NOT_ESTABLISHED,SRC-022,ABSTRACT_ONLY_PRIMARY_PENDING,读取李林全文并核台北史语所高清甲骨原片
