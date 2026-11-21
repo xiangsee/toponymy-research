@@ -40,13 +40,14 @@ def validate():
     witnesses = rows_from("data/p1a_inscription_register.csv")
     attestations = rows_from("data/p1a_name_attestations.csv")
     qin_han_events = rows_from("data/p1b_qin_han_name_events.csv")
+    lifecycle_events = rows_from("data/p1b_lifecycle_events.csv")
     name_referents = rows_from("data/p1b_name_referents.csv")
     referent_relations = rows_from("data/p1b_name_referent_relations.csv")
     catalog_queries = rows_from("data/p1a_catalog_queries.csv")
     relations = rows_from("data/p1a_historical_name_relations.csv")
     if not all((cases, sources, claims, witnesses, attestations,
                 catalog_queries, relations, qin_han_events,
-                name_referents, referent_relations)):
+                name_referents, referent_relations, lifecycle_events)):
         raise ValueError("Research registers cannot be empty")
 
     case_ids = required_unique(cases, "case_id", "case")
@@ -57,6 +58,7 @@ def validate():
     query_ids = required_unique(catalog_queries, "query_id", "catalog query")
     relation_ids = required_unique(relations, "relation_id", "name relation")
     event_ids = required_unique(qin_han_events, "event_id", "Qin-Han event")
+    lifecycle_event_ids = required_unique(lifecycle_events, "event_id", "lifecycle event")
     referent_ids = required_unique(name_referents, "referent_id", "name referent")
     ref_relation_ids = required_unique(referent_relations, "relation_id", "referent relation")
     for line, case in enumerate(cases, 2):
@@ -134,6 +136,21 @@ def validate():
             if not (relation.get(field) or "").strip():
                 raise ValueError(f"referent relation line {line}: missing {field}")
 
+    for line, event in enumerate(lifecycle_events, 2):
+        if event.get("case_id") not in case_ids:
+            raise ValueError(f"lifecycle event line {line}: unknown case {event.get('case_id')!r}")
+        if event.get("referent_id") not in referent_ids:
+            raise ValueError(f"lifecycle event line {line}: unknown referent {event.get('referent_id')!r}")
+        source_refs(event.get("source_ids", ""), source_ids, "lifecycle event", line)
+        for field in ("name_form", "use_channel", "event_type", "time_scope",
+                      "time_certainty", "evidence_status", "not_established", "verification_next"):
+            if not (event.get(field) or "").strip():
+                raise ValueError(f"lifecycle event line {line}: missing {field}")
+        if event.get("time_certainty") == "EXACT_GOV_ORDER_DATE" and not (
+            "GOV" in event.get("evidence_status", "")
+        ):
+            raise ValueError(f"lifecycle event line {line}: exact government date requires government evidence status")
+
     with (ROOT / "data/toponym_case.schema.json").open(encoding="utf-8") as handle:
         schema = json.load(handle)
     if schema.get("type") != "object":
@@ -144,7 +161,8 @@ def validate():
           f"{len(attestation_ids)} name attestations, "
           f"{len(query_ids)} catalog queries, {len(relation_ids)} proposed name relations, "
           f"{len(event_ids)} Qin-Han name events, "
-          f"{len(referent_ids)} name referents, {len(ref_relation_ids)} referent links")
+          f"{len(referent_ids)} name referents, {len(ref_relation_ids)} referent links, "
+          f"{len(lifecycle_event_ids)} lifecycle events")
     print("Reference IDs, CSV and JSON syntax checked.")
     print("This does NOT validate historical facts, epigraphic readings or geographic identification.")
 
