@@ -161,3 +161,16 @@ NEW_NAME、RENAME、REINSTATE、ALIAS、BORROW、TRANSFER、SPLIT、MERGE、EXPA
 名称操作类型：`OLD_NAME_REUSED_IN_MIGRATION`、`QIAO_ADMIN_WITHOUT_SHITU`、`QIAO_TERRITORIALIZATION`、`TU_DUAN_HOUSEHOLD_REGISTRATION`、`QIAO_ADMIN_RENAME`、`QIAO_ADMIN_ABOLISH`。
 
 不得由“南兰陵”的同名直接认定原兰陵消失，也不把土断等同一概撤侨政区。见[P1C札记01](research/P1C_01_QIAO_PREFECTURES_TOPONYM_MIGRATION.md)。
+
+## M. 隋唐侨置名称的命运：废的是政区，不一定是名称（P1-C v1.0）
+
+新增史实支持的、按层级分开的事件：
+- `QIAO_COMMANDERY_ABOLISHED`：如江汉河东侨郡589废；
+- `QIAO_COUNTY_MERGED`：梁兰陵县589并入曲阿；
+- `OLD_COUNTY_NAME_SURVIVES_AFTER_QIAO_COMMANDERY`：河东侨郡废而松滋县名保留；
+- `OLD_TERRITORY_USED_FOR_NEW_COUNTY_NAME`：唐620以故兰陵县地置武进县，但县界连续仍有争议；
+- `MULTIPLE_COMMANDERY_NAMES_MERGED`：淮南寿春等县开皇初并废多个郡，而县作为基层政区保留。
+
+**不得把**同为“兰陵”的郡和县直接合并，不得将开皇初所有废郡混作589平陈之后，不得由松滋县继续使用推断全部旧侨民持续同一身份。
+
+材料：[隋代专题札记](research/P1C_02_SUI_CONSOLIDATION_QIAO_NAME_OUTCOMES.md)、[名称迁移表](../data/p1c_qiao_name_transfers.csv)。
