@@ -79,3 +79,13 @@ NEW_NAME、RENAME、REINSTATE、ALIAS、BORROW、TRANSFER、SPLIT、MERGE、EXPA
 **不能把“字形相同”当成“已证同一实体”**。必须分开记录藏品/原始甲骨来源、铭文中的称谓、具体地望学说及先后次序。
 
 案例：何尊“宅兹中国”见[C032](../cases/C032_HE_ZUN.md)；宜侯夨簋“迁侯于宜”见[C033](../cases/C033_YIHOU_CE_GUI.md)；甲骨「方」字是否专名见[C034](../cases/C034_ORACLE_FANG.md)。
+
+## G. “同字多用”与历史方向严格分开（P1-A v0.4）
+
+“目”在甲骨中可以作普通名词、观察动词、人名或田猎地点，金文又有族氏铭文。**同一汉字具有普通义和专名功能，不等于专名得名于这个普通义。**
+
+“亡终／无终”有商代青铜兵器族氏铭文、春秋无终子政治称谓、汉代右北平郡无终县等材料；李贤唐注则存在“山名→国号→县名”释源，与现代族氏研究的侧重不同。**字形同一、年代先后和不同地理地点的分布并不自动形成名称或族群传承。**
+
+新增关系类型：SAME_GRAPH、SAME_NAME_FORM、MULTIPLE_ROLES_ATTESTED、REFERENT_IDENTIFICATION_HYPOTHESIS、HISTORICAL_DERIVATION_HYPOTHESIS、DERIVATION_SUPPORTED、DISPUTED_LOCATION、UNRESOLVED_DIRECTION。
+
+严格按“古字形→语境句法→专名功能→历史指称→传承因果”五层审查。见 [方法协议](methods/NAME_ROLE_PROVENANCE_PROTOCOL.md)、[C035目](../cases/C035_MU.md)、[C036无终](../cases/C036_WUZHONG.md)。
