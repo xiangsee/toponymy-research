@@ -148,3 +148,16 @@ NEW_NAME、RENAME、REINSTATE、ALIAS、BORROW、TRANSFER、SPLIT、MERGE、EXPA
 - 1914会稽道≠旧会稽县重新设立；1949新会稽县并不自动与1911前旧县完全同域。
 
 详细规范：[生命周期核验协议](methods/TOPONYM_LIFECYCLE_PROTOCOL.md)；数据：[事件记录](../data/p1b_lifecycle_events.csv)。
+
+## L. 侨置、侨籍与土断：名称迁徙的专门维度（P1-C v0.9）
+
+- `ORIGINAL_REFERENT`：迁出地的原州郡县；
+- `QIAO_ADMIN`：迁入地沿用旧名新设的行政机构；
+- `LOCAL_TERRITORIAL_ADMIN`：当地早已存在的实土州郡县；
+- `MIGRANT_REGISTER`：侨人和原籍户籍身份；
+- `TU_DUAN_EVENT`：土断，对户籍/行政政区的实际处理；
+- `TERRITORIAL_SUCCESSOR`：侨政区割实或另设的后继行政实体。
+
+名称操作类型：`OLD_NAME_REUSED_IN_MIGRATION`、`QIAO_ADMIN_WITHOUT_SHITU`、`QIAO_TERRITORIALIZATION`、`TU_DUAN_HOUSEHOLD_REGISTRATION`、`QIAO_ADMIN_RENAME`、`QIAO_ADMIN_ABOLISH`。
+
+不得由“南兰陵”的同名直接认定原兰陵消失，也不把土断等同一概撤侨政区。见[P1C札记01](research/P1C_01_QIAO_PREFECTURES_TOPONYM_MIGRATION.md)。
