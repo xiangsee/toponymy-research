@@ -47,10 +47,10 @@
 
 - [**新：目与无终的族名—地名同形证据及方向争议**](docs/research/P1A_04_MU_WUZHONG_NAME_ROLES.md)
 - [目（C035）](cases/C035_MU.md)｜[无终（C036）](cases/C036_WUZHONG.md)｜[名称功能和谱系证明协议](docs/methods/NAME_ROLE_PROVENANCE_PROTOCOL.md)
-- [12条具体名称用例](data/p1a_name_attestations.csv)｜[最新分级断言](data/p1a_claim_register.csv)
+- [P1-A名称用例](data/p1a_name_attestations.csv)｜[持续更新的分级断言](data/p1a_claim_register.csv)
 - [**上轮：商周出土文字证据压力测试（何尊、宜侯夨簋与卜辞「方」）**](docs/research/P1A_03_SHANG_ZHOU_INSCRIPTION_TEST.md)
 - [C032 何尊：空间和政治名称](cases/C032_HE_ZUN.md)｜[C033 宜侯夨簋：迁封与争议地望](cases/C033_YIHOU_CE_GUI.md)｜[C034 甲骨「方」字释读反例](cases/C034_ORACLE_FANG.md)
-- [铭文来源登记（3条）](data/p1a_inscription_register.csv)｜[研究断言登记（22条）](data/p1a_claim_register.csv)
+- [商周铭文来源登记](data/p1a_inscription_register.csv)｜[研究断言总表](data/p1a_claim_register.csv)
 - [本轮成果：东汉郡名六分法的来源与局限](docs/research/P1A_01_EARLY_TOPONYM_CLASSIFICATION.md)
 - [第一批基础文献来源卡（8份）](docs/research/P1A_02_SOURCE_CARDS.md)
 - [华阴：历史名称、地理位置与更名的实例](cases/C031_HUAYIN.md)
