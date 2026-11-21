@@ -129,3 +129,22 @@ NEW_NAME、RENAME、REINSTATE、ALIAS、BORROW、TRANSFER、SPLIT、MERGE、EXPA
 数据里将 **`referent_id`（历史对象）**与 **`name_form`（词形）**分开，并为历史派生关系提供 `proof_level`。所有仅在学术摘要提出的关系必须保留为 `JOURNAL_ABSTRACT_ONLY`。
 
 [指称对象表](../data/p1b_name_referents.csv) / [关系表](../data/p1b_name_referent_relations.csv)。
+
+## K. 生命周期不只有一个时段：存续渠道与行政层级分开（P1-B v0.8）
+
+**跨渠道存续维度**：
+- `ADMIN_ACTIVE(level)` / `ADMIN_TERMINATED(level)`：行政层级特定实体；
+- `NATURAL_FEATURE_USED`：山川等自然地理名称；
+- `CULTURAL_ALIAS_USED`：文学、地方志、民间古称；
+- `OLD_NAME_ADOPTED_FOR_NEW_ADMIN`：旧名用于新行政主体；
+- `RESTORED_SIMILAR_NAME`：旧行政名恢复，注意行政实体未必相同；
+- `STATUS_UNKNOWN`：找不到实际使用或停用证据时不得默认为“已消失”。
+
+**典型反证**：
+- 2016邯郸县撤销≠邯郸市撤销；
+- 《汉书》赵国“莽曰桓亭”不能降格误解为县级改名；
+- 无锡“有锡”短期改名≠锡矿重新出现的实证；
+- 姑苏区2012新设≠恢复古代“姑苏区”；
+- 1914会稽道≠旧会稽县重新设立；1949新会稽县并不自动与1911前旧县完全同域。
+
+详细规范：[生命周期核验协议](methods/TOPONYM_LIFECYCLE_PROTOCOL.md)；数据：[事件记录](../data/p1b_lifecycle_events.csv)。
