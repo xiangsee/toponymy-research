@@ -1,0 +1,4 @@
+record_id,case_id,original_name,original_region,qiao_name,new_region,attested_period,event_type,source_ids,source_status,unknowns,next_verification
+QIAO001,C047,兰陵,古山东东海/兰陵郡县旧地,南兰陵,南朝南徐州及晋陵武进有关区域,东晋南朝,OLD_NAME_REUSED_WITH_MIGRANT_ADMIN,SRC-099|SRC-100|SRC-108,CLASSICAL_AND_SCHOLARLY,早期侨置年月/受领迁民/郡治未核,核宋书南齐书胡阿祥专著原文
+QIAO002,C047,南东海,南朝江南侨郡,兰陵郡,梁南徐州,502年,RENAMED_OR_REGULARIZED_QIAO_ADMIN,SRC-104|SRC-105,CHGIS_RECONSTRUCTION,此兰陵郡与旧南兰陵郡关系及502土断范围待核,核梁书武帝纪天监元年条
+QIAO003,C047,兰陵郡,梁南徐州兰陵郡,东海郡,陈南徐州,558年,ADMIN_RENAME,SRC-104,CHGIS_RECONSTRUCTION,县属及实土变化待核,核陈书高帝纪永定二年条
