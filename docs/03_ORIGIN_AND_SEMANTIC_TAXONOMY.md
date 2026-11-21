@@ -115,3 +115,17 @@ NEW_NAME、RENAME、REINSTATE、ALIAS、BORROW、TRANSFER、SPLIT、MERGE、EXPA
 **反证**：不因“洞庭郡”与“武陵郡”辖若干同名县就默认一个郡完全改名为另一个郡，也不因秦迁陵二十五年为县就断言“迁陵”词语当年首次出现。
 
 见 [P1B札记01](research/P1B_01_QIN_HAN_TOPONYM_STANDARDIZATION.md)。
+
+## J. 自然参照、行政地名与多重指称（P1-B v0.7）
+
+增加两种并行的机制，不混入“词源”单一字段：
+- `NATURAL_REFERENCE_TO_ADMIN`：自然河湖或山川名称/方位进入行政区划名（如三川传统释源及汉中）。
+- `GEOGRAPHIC_TERM_REUSE`：相同的方位词可在不同地域和时间独立应用（如历史上多个“河南”）。
+- `ADMIN_RENAME_WITH_SCOPE_UNCERTAINTY`：秦三川→汉河南有更名文献，但疆界不自动等同。
+- `SAME_NAME_DISTINCT_REFERENTS`：两个材料用相同县名却指不同地点，2025年潘国立关于梁县的**待核学术解释**。
+- `COUNTY_SEAT_RELOCATION`：县治转移、行政废置后可能使后世旧址误配，卷县/衡雍为**待核学术解释**。
+- `GEOGRAPHY_TO_POLITICAL_TITLE`：地域名称进入爵号或王号（汉中→汉王），再到王朝国号；不自动延伸为民族起源的充分条件。
+
+数据里将 **`referent_id`（历史对象）**与 **`name_form`（词形）**分开，并为历史派生关系提供 `proof_level`。所有仅在学术摘要提出的关系必须保留为 `JOURNAL_ABSTRACT_ONLY`。
+
+[指称对象表](../data/p1b_name_referents.csv) / [关系表](../data/p1b_name_referent_relations.csv)。
