@@ -204,3 +204,22 @@ NEW_NAME、RENAME、REINSTATE、ALIAS、BORROW、TRANSFER、SPLIT、MERGE、EXPA
 **证据界限**：宋会要额度据现代学者回推的不晚于1023年，不是已经找到宋代1023设上海务令；“上海浦”的宋人记载经明代地方志转引，未独立核原书。
 
 [札记02](research/P1D_02_SONG_YUAN_SHANGHAI_PLACE_NAME_SCALING.md)。
+
+## N. 名称的形成≠产业经济传播≠政治再命名（P1-D v1.3）
+
+**三轴分开**：
+- `NAME_ORIGIN`：地理山名、旧县名、年号、族群或设施名称何时、何种历史机制首次用于该地方；
+- `NAME_DIFFUSION`：瓷器、商贸、市舶、税务等如何扩大对已有名称的识别与社会使用；
+- `POLITICAL_RENAMING`：国家更换正式地名、行政层级、专名或潜藩升府与避国号等事由。
+
+新类型：
+- `REIGN_TITLE_TOPONYM`：年号关联命名（景德镇、庆元府：事件具体时间分别核）；
+- `MOUNTAIN_TO_PREFECTURE_NAME`：山名入州（四明山→明州）；
+- `COMMERCE_AS_NAME_AMPLIFIER`：经济传播而非必然是词源；
+- `LATE_ETYMOGRAPHIC_MARK_MYTH`：清人通过景德年制底款解释早宋地名，2025论文摘要提出考古反证；
+- `PREFECTURE_ESCALATED_FOR_IMPERIAL_PAST_TITLE`：皇帝潜藩升府；
+- `DYNASTIC_NAME_AVOIDANCE`：避王朝国号（明州府→宁波府，直接改名有《明史》，动机仍核原诏）。
+
+**时间标签严格区分**：宋史宁宗纪1194升府、1195正式进入庆元纪年；不是必须选其中一个“唯一建置年”。元明清制度不自动前溯宋景德年间。
+
+方法与事实出处：[P1D-03札记](research/P1D_03_JINGDEZHEN_MINGZHOU_ORIGIN_VS_DIFFUSION.md)；[证据协议](methods/NAME_ORIGIN_DIFFUSION_AND_RENAMING_PROTOCOL.md)。
