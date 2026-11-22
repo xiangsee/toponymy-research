@@ -44,6 +44,7 @@ def validate():
     qiao_transfers = rows_from("data/p1c_qiao_name_transfers.csv")
     sui_tang_events = rows_from("data/p1d_sui_tang_name_events.csv")
     song_yuan_events = rows_from("data/p1d_song_yuan_urban_name_events.csv")
+    industry_port_events = rows_from("data/p1d_industry_port_name_events.csv")
     name_referents = rows_from("data/p1b_name_referents.csv")
     referent_relations = rows_from("data/p1b_name_referent_relations.csv")
     catalog_queries = rows_from("data/p1a_catalog_queries.csv")
@@ -51,7 +52,7 @@ def validate():
     if not all((cases, sources, claims, witnesses, attestations,
                 catalog_queries, relations, qin_han_events,
                 name_referents, referent_relations, lifecycle_events, qiao_transfers,
-                sui_tang_events, song_yuan_events)):
+                sui_tang_events, song_yuan_events, industry_port_events)):
         raise ValueError("Research registers cannot be empty")
 
     case_ids = required_unique(cases, "case_id", "case")
@@ -66,6 +67,7 @@ def validate():
     qiao_transfer_ids = required_unique(qiao_transfers, "record_id", "qiao transfer")
     sui_tang_event_ids = required_unique(sui_tang_events, "event_id", "Sui-Tang event")
     song_yuan_event_ids = required_unique(song_yuan_events, "event_id", "Song-Yuan urban name event")
+    industry_port_event_ids = required_unique(industry_port_events, "event_id", "industry-port naming event")
     referent_ids = required_unique(name_referents, "referent_id", "name referent")
     ref_relation_ids = required_unique(referent_relations, "relation_id", "referent relation")
     for line, case in enumerate(cases, 2):
@@ -190,6 +192,20 @@ def validate():
         ):
             raise ValueError(f"Song-Yuan event line {line}: chronology cannot have missing source IDs")
 
+    for line, event in enumerate(industry_port_events, 2):
+        if event.get("case_id") not in case_ids:
+            raise ValueError(f"industry-port naming event line {line}: unknown case {event.get('case_id')!r}")
+        source_refs(event.get("source_ids", ""), source_ids, "industry-port naming event", line)
+        for field in ("name_form", "historical_object_type", "time_scope", "time_basis",
+                      "event_type", "evidence_status", "supported_statement",
+                      "not_established", "verification_next"):
+            if not (event.get(field) or "").strip():
+                raise ValueError(f"industry-port naming event line {line}: missing {field}")
+        if event.get("event_type") == "LATER_ETYMOLOGY_BOTTOM_MARK_CLAIM" and (
+            "DISPUTED" not in event.get("evidence_status", "")
+        ):
+            raise ValueError(f"industry-port event line {line}: bottom-mark etymology must retain disputed status")
+
     with (ROOT / "data/toponym_case.schema.json").open(encoding="utf-8") as handle:
         schema = json.load(handle)
     if schema.get("type") != "object":
@@ -203,7 +219,8 @@ def validate():
           f"{len(referent_ids)} name referents, {len(ref_relation_ids)} referent links, "
           f"{len(lifecycle_event_ids)} lifecycle events, {len(qiao_transfer_ids)} qiao-name transfers, "
           f"{len(sui_tang_event_ids)} Sui-Tang name events, "
-          f"{len(song_yuan_event_ids)} Song-Yuan urban name events")
+          f"{len(song_yuan_event_ids)} Song-Yuan urban name events, "
+          f"{len(industry_port_event_ids)} industry/port name events")
     print("Reference IDs, CSV and JSON syntax checked.")
     print("This does NOT validate historical facts, epigraphic readings or geographic identification.")
 
