@@ -43,6 +43,7 @@ def validate():
     lifecycle_events = rows_from("data/p1b_lifecycle_events.csv")
     qiao_transfers = rows_from("data/p1c_qiao_name_transfers.csv")
     sui_tang_events = rows_from("data/p1d_sui_tang_name_events.csv")
+    song_yuan_events = rows_from("data/p1d_song_yuan_urban_name_events.csv")
     name_referents = rows_from("data/p1b_name_referents.csv")
     referent_relations = rows_from("data/p1b_name_referent_relations.csv")
     catalog_queries = rows_from("data/p1a_catalog_queries.csv")
@@ -50,7 +51,7 @@ def validate():
     if not all((cases, sources, claims, witnesses, attestations,
                 catalog_queries, relations, qin_han_events,
                 name_referents, referent_relations, lifecycle_events, qiao_transfers,
-                sui_tang_events)):
+                sui_tang_events, song_yuan_events)):
         raise ValueError("Research registers cannot be empty")
 
     case_ids = required_unique(cases, "case_id", "case")
@@ -64,6 +65,7 @@ def validate():
     lifecycle_event_ids = required_unique(lifecycle_events, "event_id", "lifecycle event")
     qiao_transfer_ids = required_unique(qiao_transfers, "record_id", "qiao transfer")
     sui_tang_event_ids = required_unique(sui_tang_events, "event_id", "Sui-Tang event")
+    song_yuan_event_ids = required_unique(song_yuan_events, "event_id", "Song-Yuan urban name event")
     referent_ids = required_unique(name_referents, "referent_id", "name referent")
     ref_relation_ids = required_unique(referent_relations, "relation_id", "referent relation")
     for line, case in enumerate(cases, 2):
@@ -174,6 +176,20 @@ def validate():
             if not (event.get(field) or "").strip():
                 raise ValueError(f"Sui-Tang event line {line}: missing {field}")
 
+    for line, event in enumerate(song_yuan_events, 2):
+        if event.get("case_id") not in case_ids:
+            raise ValueError(f"Song-Yuan event line {line}: unknown case {event.get('case_id')!r}")
+        source_refs(event.get("source_ids", ""), source_ids, "Song-Yuan event", line)
+        for field in ("name_form", "historical_object_type", "time_scope", "time_basis",
+                      "event_type", "evidence_status", "supported_statement",
+                      "not_established", "verification_next"):
+            if not (event.get(field) or "").strip():
+                raise ValueError(f"Song-Yuan event line {line}: missing {field}")
+        if event.get("evidence_status") == "CLASSICAL_CHRONICLE_AND_GOV_CALENDAR" and not (
+            event.get("source_ids") or ""
+        ):
+            raise ValueError(f"Song-Yuan event line {line}: chronology cannot have missing source IDs")
+
     with (ROOT / "data/toponym_case.schema.json").open(encoding="utf-8") as handle:
         schema = json.load(handle)
     if schema.get("type") != "object":
@@ -186,7 +202,8 @@ def validate():
           f"{len(event_ids)} Qin-Han name events, "
           f"{len(referent_ids)} name referents, {len(ref_relation_ids)} referent links, "
           f"{len(lifecycle_event_ids)} lifecycle events, {len(qiao_transfer_ids)} qiao-name transfers, "
-          f"{len(sui_tang_event_ids)} Sui-Tang name events")
+          f"{len(sui_tang_event_ids)} Sui-Tang name events, "
+          f"{len(song_yuan_event_ids)} Song-Yuan urban name events")
     print("Reference IDs, CSV and JSON syntax checked.")
     print("This does NOT validate historical facts, epigraphic readings or geographic identification.")
 
