@@ -45,6 +45,7 @@ def validate():
     sui_tang_events = rows_from("data/p1d_sui_tang_name_events.csv")
     song_yuan_events = rows_from("data/p1d_song_yuan_urban_name_events.csv")
     industry_port_events = rows_from("data/p1d_industry_port_name_events.csv")
+    p1d_claim_updates = rows_from("data/p1d_claim_lifecycle_updates.csv")
     name_referents = rows_from("data/p1b_name_referents.csv")
     referent_relations = rows_from("data/p1b_name_referent_relations.csv")
     catalog_queries = rows_from("data/p1a_catalog_queries.csv")
@@ -52,7 +53,8 @@ def validate():
     if not all((cases, sources, claims, witnesses, attestations,
                 catalog_queries, relations, qin_han_events,
                 name_referents, referent_relations, lifecycle_events, qiao_transfers,
-                sui_tang_events, song_yuan_events, industry_port_events)):
+                sui_tang_events, song_yuan_events, industry_port_events,
+                p1d_claim_updates)):
         raise ValueError("Research registers cannot be empty")
 
     case_ids = required_unique(cases, "case_id", "case")
@@ -68,6 +70,7 @@ def validate():
     sui_tang_event_ids = required_unique(sui_tang_events, "event_id", "Sui-Tang event")
     song_yuan_event_ids = required_unique(song_yuan_events, "event_id", "Song-Yuan urban name event")
     industry_port_event_ids = required_unique(industry_port_events, "event_id", "industry-port naming event")
+    p1d_claim_update_ids = required_unique(p1d_claim_updates, "update_id", "P1-D claim lifecycle update")
     referent_ids = required_unique(name_referents, "referent_id", "name referent")
     ref_relation_ids = required_unique(referent_relations, "relation_id", "referent relation")
     for line, case in enumerate(cases, 2):
@@ -206,6 +209,14 @@ def validate():
         ):
             raise ValueError(f"industry-port event line {line}: bottom-mark etymology must retain disputed status")
 
+    for line, change in enumerate(p1d_claim_updates, 2):
+        source_refs(change.get("source_ids", ""), source_ids, "P1-D claim lifecycle", line)
+        for field in ("affected_claim", "impact_type", "current_status",
+                      "previous_assumption", "new_evidence",
+                      "evidence_limit", "verification_next"):
+            if not (change.get(field) or "").strip():
+                raise ValueError(f"P1-D lifecycle line {line}: missing {field}")
+
     with (ROOT / "data/toponym_case.schema.json").open(encoding="utf-8") as handle:
         schema = json.load(handle)
     if schema.get("type") != "object":
@@ -220,7 +231,8 @@ def validate():
           f"{len(lifecycle_event_ids)} lifecycle events, {len(qiao_transfer_ids)} qiao-name transfers, "
           f"{len(sui_tang_event_ids)} Sui-Tang name events, "
           f"{len(song_yuan_event_ids)} Song-Yuan urban name events, "
-          f"{len(industry_port_event_ids)} industry/port name events")
+          f"{len(industry_port_event_ids)} industry/port name events, "
+          f"{len(p1d_claim_update_ids)} P1-D claim lifecycle updates")
     print("Reference IDs, CSV and JSON syntax checked.")
     print("This does NOT validate historical facts, epigraphic readings or geographic identification.")
 
