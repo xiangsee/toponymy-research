@@ -1,0 +1,14 @@
+event_id,case_id,name_form,historical_object_type,historical_date,date_basis,event_type,naming_basis,administrative_reason,source_ids,evidence_status,not_established,verification_next
+RN-E001,C056,淳化县,COUNTY,宋太宗淳化四年=993,清淳化县志与现代陕西县志,COUNTY_CARVED_FROM_YUNYANG,宋太宗淳化年号,梨园镇及金龟平泉古鼎甘延温丰威远六乡建县，旧志引黄观治理需要,SRC-167|SRC-168|SRC-169,LATE_CLASSICAL_AND_OFFICIAL_HISTORY,未取得宋代原始设县命名诏令,核长安志与宋史校本及原设县书
+RN-E002,C056,梨园镇／黎国镇,HISTORICAL_TOWN_GRAPH,清代校勘宋史所传宋初地名,宋史抄文及洪亮吉校释,TEXTUAL_EMENDATION,梨园/黎园是旧镇名,清代校书者认为宋史黎国应为梨园,SRC-168|SRC-169|SRC-170,LATE_CLASSICAL_TEXTUAL_EMENDATION,文字异写不等于确证存在两个原始地方,核长安志宋史早本图版
+RN-E003,C057,嘉定县,COUNTY,嘉定十年十二月初九旧历=1218-01-07,洪武苏州府志及上海现行政府资料,COUNTY_ESTABLISHMENT_RECORDED_1217_ERAYEAR,宋宁宗嘉定年号，奏建请以年纪名,昆山东部距离县治远及司法税役执行不便，五乡划出,SRC-162|SRC-163|SRC-164|SRC-166,LOCAL_OFFICIAL_AND_MING_GAZETTEER,与宋史嘉定十五年1222冲突未裁决,核建县省札及洪武苏州府志初刻
+RN-E004,C057,嘉定县,COUNTY,嘉定十五年=1222,宋史地理志四卷八十八,COMPETING_COUNTY_ESTABLISHMENT_DATE,以年为名,析昆山县置,SRC-159|SRC-166,SONG_SHI_CHRONOLOGY_COMPETES,不是嘉定十年旧历新历换算差异,核宋史点校本及宋代吏员到任
+RN-E005,C057,奏建嘉定县省札,LOCAL_MEMORIAL_REPORTED,嘉定十年九月=1217年,现代地方史引省札,ADMINISTRATIVE_PROPOSAL,请以年纪名,平江府赵彦橚及王棐称行政司法税役难覆东境,SRC-163|SRC-164,MODERN_QUOTATION_OF_SONG_MEMORIAL,原宋代奏札全文及现存最早抄本未独立核,寻找省札最早传本及署名时间
+RN-E006,C057,嘉定县令高衍孙,ADMIN_OFFICIAL_ACTIVITY,嘉定十一年五月=1218年6月,上海纪委地方史记,FIRST_MAGISTRATE_ASSUMES_DUTY,不直接创造名称,县署建立和城市治理已见后代记述,SRC-165,OFFICIAL_LOCAL_BIOGRAPHICAL_HISTORY,1218首任到任提供1222的反证线索但未核当年官员原文,核高衍孙创县记及县衙档案
+RN-E007,C057,嘉定县乡都数,COUNTY_SUBDIVISION,建县嘉定十年左右,央广及官方研究记27与28,SOURCE_COUNT_CONFLICT,与命名来源独立,五乡27都与五乡28都的分割数额,SRC-163|SRC-164|SRC-165,CONFLICTING_MODERN_QUOTATIONS,未核原省札不知是否不同程序或统计口径,查奏建省札原文与批复
+RN-E008,C058,邵州,PREFECTURE,1225年之前,宋史卷88,PREDECESSOR_ADMIN_NAME,原邵州邵阳郡,理宗即位前旧州名,SRC-159|SRC-173,DYNASTIC_HISTORICAL_GEOGRAPHY,邵州与宝庆府前后边界并非自动相同,核邵州和宝庆府历史县界
+RN-E009,C058,宝庆府,ELEVATED_PREFECTURE,宝庆元年=1225,宋史卷88与湖南文物史,FORMER_PRINCE_BASE_PROMOTED,明代资料记从宝庆元年号命名,宋理宗潜藩升旧邵州为府,SRC-159|SRC-172|SRC-173|SRC-174,SONG_SHI_PROMOTION_AND_LATER_NAME_EXPLANATION,原宋代升府命名诏书未见,核理宗初年升府诏令和舆地纪胜
+RN-E010,C059,嘉定府,ELEVATED_PREFECTURE,宋宁宗庆元元年十月=1195,宋史宁宗本纪卷37,COURT_CHRONICLE_PROMOTION,嘉定府专名构词原因待核,嘉州以宁宗潜邸升府,SRC-161|SRC-171,CHRONICLE_ATTESTATION,与宋史地理志1196冲突需区分批准与执行或错误,核宋代命令及宋史本纪地志版本
+RN-E011,C059,嘉定府,ELEVATED_PREFECTURE,宋宁宗庆元二年=1196,宋史地理志卷89,COMPETING_PREFECTURE_PROMOTION_DATE,嘉定府专名构词原因待核,嘉州以宁宗潜邸升府,SRC-160|SRC-171,GEOGRAPHY_CHRONOLOGY_COMPETES,没有证据可将1195直接认定批准1196直接认定实施,核嘉定府志宋朝事实和宋史异文
+RN-E012,C059,嘉定,REIGN_TITLE_NOT_YET_STARTED,宋宁宗嘉定元年=1208,宋宁宗嘉定年号起始,CHRONOLOGICAL_NEGATIVE_CONTROL,1195/1196嘉定府不能由1208才有的嘉定年号赋名,皇帝当时使用庆元年号,SRC-160|SRC-161|SRC-163,TEMPORAL_NEGATIVE_EVIDENCE,嘉定府二字的原始构词仍未知,核1195升府文书直接命名理由
+RN-E013,C058,宝庆府,ELEVATED_PREFECTURE,元至元十二至十四年=1275至1277,宋元史及CHGIS,NAME_CONTINUITY_TO_YUAN_ROUTE,宝庆名继续用于路级建置,元后行政级别与地域另有变动,SRC-173,CHGIS_SECONDARY_HISTORICAL_RECONSTRUCTION,府与宝庆路不自动同域同权能,核元史卷63与中间府县名单
