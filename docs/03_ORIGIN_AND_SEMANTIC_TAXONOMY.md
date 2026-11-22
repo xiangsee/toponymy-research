@@ -223,3 +223,16 @@ NEW_NAME、RENAME、REINSTATE、ALIAS、BORROW、TRANSFER、SPLIT、MERGE、EXPA
 **时间标签严格区分**：宋史宁宗纪1194升府、1195正式进入庆元纪年；不是必须选其中一个“唯一建置年”。元明清制度不自动前溯宋景德年间。
 
 方法与事实出处：[P1D-03札记](research/P1D_03_JINGDEZHEN_MINGZHOU_ORIGIN_VS_DIFFUSION.md)；[证据协议](methods/NAME_ORIGIN_DIFFUSION_AND_RENAMING_PROTOCOL.md)。
+
+## O. 年号同形不能自动推定年号词源（P1-D v1.4）
+
+- `SAME_FORM_WITH_REIGN_TITLE`：地名与年号字面完全相同，**只是词形事实**。
+- `REIGN_NAME_DERIVATION_DOCUMENTED`：古籍明确写“以年为名”或“从年号”，须另记录古籍写作年代/转引层级。
+- `CHRONOLOGICALLY_EXCLUDED_REIGN_ETYMOLOGY`：若地名首次出现早于该年号启用，则不能从**该年号**推导原始名称（四川嘉定府1195/1196早于宁宗嘉定年号1208）。
+- `ADMIN_COUNTY_CARVING`：从已有县析乡另建县（淳化993、嘉定县1217或1222异说）。
+- `PRINCELY_RESIDENCE_PREFECTURE_PROMOTION`：因皇帝潜藩/旧封号将州升府（宝庆府1225及四川嘉定府1195/1196），不是单纯“因年号设新县”。
+- `GOVERNANCE_NEED_NOT_NAME_SOURCE`：因距离、税役、司法需要设置县，与选择用何年号命名分别核证。
+- `CONFLICTING_HISTORICAL_RECORD_DATES`：保留古代年号纪年、现代公历折算、史志成书时间及相反来源；不可把嘉定县1217/1222错误简写成农历/公历换算。
+- `HISTORICAL_GRAPH_EMENDATION`：梨园/黎园与传本“黎国”校勘需要源考，不能误建第二个镇实体。
+
+结构化材料：[P1D-04札记](research/P1D_04_SONG_REIGN_NAME_CONTROL_STUDY.md)｜[事件](../data/p1d_song_reign_name_events.csv)｜[争议](../data/p1d_reign_naming_disputes.csv)｜[方法协议](methods/REIGN_NAME_ETYMOGRAPHY_GOVERNANCE_PROTOCOL.md)。
