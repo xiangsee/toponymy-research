@@ -122,3 +122,17 @@ SRC-120,CHGIS杭州州治758至1128,复旦CHGIS,数据库现行,historical_gis,h
 SRC-121,旧唐书卷四十百衲本异文杭州州治,古籍整理出版单位,现今数字整理,edited_classical_text,https://pinguji.cn/bookContent/13a74ca05d054c9a93c6a55e5741dca5_46c5e77be1e646fcb58979b13ba492a0.html,TEXT_WITH_COLLATION_NOTES_READ,余杭郡杭州条存在为/属字异文，尚未全面核点校本
 SRC-122,中国地方志2020第6期两浙唐初州县重组,中国地方志编辑部,2020,academic_journal_excerpt,https://difangzhi.cn/qk/qkgl/zgnjyj201901_128964/202102/W020210220554993203599.pdf,SEARCH_SNIPPET_ONLY_PDF_NOT_SCREENED,唐初江南州县大规模临时设废及后续制度化；仍需PDF页面核验
 SRC-123,隋唐中国经济通史州县变更摘录,湖南人民出版社,2026,economic_history_book_pdf,https://www.suiempire.com/downloads/zgjjts.pdf,SEARCH_SNIPPET_ONLY_PDF_NOT_SCREENED,一般统计与地理政区数量有版本口径差异，不作本轮实证依据
+SRC-124,上海市得名及文化内涵：从上海浦到海纳百川,傅林祥/上海市民政局,2023,commissioned_local_toponymy_research,https://mzj.sh.gov.cn/2023bsmz/20230507/52aab522031245dda0ec2db735dadc6d.html,FULL_COMMISSIONED_RESEARCH_READ,宋会要资料被解释为上海务最晚1023已有；酒务原页和直接设务年未独立核
+SRC-125,上海的含义推测、词源及不同指称范围,傅林祥/上海市民政局,2023,commissioned_local_toponymy_research,https://mzj.sh.gov.cn/2023bsmz/20230515/85b493c2965e4c18976aad01bc6e1689.html,FULL_COMMISSIONED_RESEARCH_READ,明确浦与聚落先后难确定，弘治海之上洋与万历引郏亶二浦为竞争古释源
+SRC-126,元史卷十六世祖本纪至元二十八年分华亭上海为县,宋濂等,明代修元史,classical_primary_chronicle,https://zh.wikisource.org/zh-hans/元史/卷016,DIGITAL_CLASSICAL_TEXT_READ,1291七月己未分华亭上海为县；是后代编纂纪事，不等于已取得批准诏书原件
+SRC-127,元史卷六十二地理志松江府上海县条,宋濂等,明代修元史,classical_geography,https://zh.wikisource.org/zh-hans/元史/卷062,DIGITAL_CLASSICAL_TEXT_READ,条记至元二十七年1290上海置县；与本纪1291及志书1292有分歧
+SRC-128,明弘治上海志卷一疆域志,郭经修/唐锦纂,明弘治,local_gazetteer_classical,https://www.shidianguji.com/book/LG2HZSHZ/chapter/1lxtceir4uzoa,DIGITAL_CLASSICAL_TEXT_READ,记宋末上海镇和1292年割华亭五乡设县及上洋释名；不是宋元同时代原档
+SRC-129,复旦CHGIS上海县1292-1911节点与元代建县异说,复旦大学历史地理信息系统,现存数据库,historical_gis_with_source_notes,https://tgaz.fudan.edu.cn/tgaz/placename/hvd_40502,GIS_SOURCE_NOTES_READ,详细列1290元史地理志1291碑记1292唐时措三说，县治点是现代历史GIS推定
+SRC-130,至元二十八年上海县正式批准的历史记录,上海市长宁区人民政府,2024,district_government_chronology,https://www.shcn.gov.cn/col7000/20110818/720806.html,GOV_HISTORY_READ,将七月二十四日1291年8月19日列为批准立上海县，原元代诏书仍待核
+SRC-131,上海县立县时间究竟该从哪年算起,闵行情/上观新闻,2026,official_local_historical_explainer,https://www.shobserver.cn/sgh/detail?id=1721472,FULL_LOCAL_HISTORY_READ,列1290提议1291批准1292实际运行的解释，元代不同记载仍需独立证据
+SRC-132,挖掘保护上海务留住城市历史记忆,王启元/复旦大学,2023,university_scholarly_essay,https://news.fudan.edu.cn/2023/1108/c47a137834/page.htm,FULL_UNIVERSITY_ESSAY_READ,指出上海务具体旧址研究和保护问题，候选地点不能误当本项目考古确证
+SRC-133,青龙镇遗址考古发掘获得重大成果,上海博物馆,2016,museum_excavation_report,https://www.shanghaimuseum.net/mu/frontend/pg/article/id/I00004060,MUSEUM_OFFICIAL_REPORT_READ,唐宋重要港口市舶务和考古建筑器物，港口衰退与河流变化关联
+SRC-134,海丝名镇青龙镇历史与遗迹,上海市青浦博物馆,2019,museum_local_history,https://museum.shqp.gov.cn/museum/qlz/20190305/483398.html,MUSEUM_HISTORY_READ,青龙镇唐代形成宋代兴盛南宋后衰，初镇年份精确史源待另核
+SRC-135,青龙镇遗址保护单位与考古,上海市青浦区人民政府,2020,official_archaeology_site,https://www.shqp.gov.cn/tv/wwgj/20201208/807549.html,GOV_OFFICIAL_SITE_READ,今青浦区白鹤镇，2019年列为全国重点文物保护单位
+SRC-136,青龙镇历史遗址保护提案答复,上海市青浦区文旅局,2025,government_official_reply,https://www.shqp.gov.cn/tv/wlzwgk/tabl/qzxbl/20251125/1340472.html,GOV_REPLY_READ,遗址重要性与现今文保并存，不等于古港功能持续
+SRC-137,宋会要辑稿总目录食货酒曲杂录,徐松清代辑录,清代辑录宋代文献,classical_source_index,https://zh.wikisource.org/zh-hans/宋會要輯稿,SOURCE_INDEX_ONLY,已有卷目录但本轮没有在原卷直接比对上海务各笔税额
