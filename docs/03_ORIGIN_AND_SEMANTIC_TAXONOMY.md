@@ -188,3 +188,19 @@ NEW_NAME、RENAME、REINSTATE、ALIAS、BORROW、TRANSFER、SPLIT、MERGE、EXPA
 - `PREFECTURE_SEAT_MOVED_SAME_NAME`：杭州州治由余杭移钱塘，州名未必因此改变。
 
 以上分类解决“行政通名变了/地方专名变了/行政对象的治所变了”三种不同命题。不得以梓潼水的后出古籍释源代替618当时原始命名决定。
+
+## M. 水道—税务机构—市镇—县名的多渠道使用（P1-D v1.2）
+
+新增机制（非必然序列）：
+- `HYDRONYM_OR_TOPONYM_SHARED_FORM`：水道/村落名称同形，出现次序可以未证；
+- `FISCAL_OFFICE_AS_NAME_ANCHOR`：税务、榷酒、税课、巡检等机构使用和固化已有空间称谓；
+- `MARKET_PORT_TOWN_NAME`：贸易集市使用已有名称并形成更广泛的人文空间指称；
+- `MARKET_NAME_TO_ADMIN_COUNTY`：集镇名称进入新的正式县级行政组织；
+- `INSTITUTIONAL_DATE_LAYERING`：提议、批准、建置实施和后世追述日期分层记录（1290/1291/1292不强行拼接为已证唯一解释）；
+- `COMMERCIAL_DECLINE_CULTURAL_SURVIVAL`：港市经济功能衰落，名称却在历史文化或文保场景存续（青龙镇）。
+
+**负例**：唐宋青龙镇曾是重要外贸港，并不能从商业繁盛直接推出“青龙”成为现代更高一级行政主名。
+
+**证据界限**：宋会要额度据现代学者回推的不晚于1023年，不是已经找到宋代1023设上海务令；“上海浦”的宋人记载经明代地方志转引，未独立核原书。
+
+[札记02](research/P1D_02_SONG_YUAN_SHANGHAI_PLACE_NAME_SCALING.md)。
