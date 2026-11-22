@@ -1,0 +1,14 @@
+event_id,case_id,name_form,historical_object_type,time_scope,time_basis,event_type,source_ids,evidence_status,supported_statement,not_established,verification_next
+SY-E001,C008,上海浦,HYDRONYM,宋代名（后世引录）,万历上海县志引用永乐大典所收郏亶水利,EARLY_HYDRONYM_NAME_RECORDED,SRC-125|SRC-128,LATER_QUOTATION_CHAIN,宋代上海浦及下海浦名称可循后世引录追溯,上海浦是否是上海务或聚落的最早来源尚不知,对勘永乐大典原引和郏亶水利书
+SY-E002,C008,上海务,FISCAL_OFFICE_WINE,不晚于1023（学者根据旧额推定）,傅林祥2023据宋会要辑稿酒务旧额解释,EARLY_FISCAL_NAME_ATTESTATION_INFERRED,SRC-124|SRC-137,SECONDARY_RETROSPECTIVE_DATING,上海务被学者判断1023年前已出现,不等于1023有新设酒务直接诏令,取宋会要辑稿对应卷原条
+SY-E003,C008,上海务,FISCAL_OFFICE_WINE,1077年（另有资料所列）,上海通志等历史记载,FISCAL_OFFICE_ATTESTED_BY_LATER_HISTORY,SRC-124|SRC-132,SECONDARY_DATE_DISAGREEMENT,1077年酒务行政记载与更早旧额线索并存,1077未必为最初建置日,比对宋会要辑稿与上海通志原卷
+SY-E004,C008,上海镇,MARKET_PORT_TOWN,南宋末年,弘治上海志及民政委托历史研究,MARKET_PORT_NAME_USED,SRC-124|SRC-128,LATER_GAZETTEER_AND_STUDY,上海被用作港口市镇名称,缺正式建镇最早诏令和准确日期,核宋代市舶分司迁移与临港碑文
+SY-E005,C008,上海市舶分司与街坊,CUSTOMS_SUB_OFFICE_URBAN_LAYOUT,1269年（研究所记街坊工程）,傅林祥2023研究引用咸淳五年董楷兴建街坊,TRADE_ADMIN_AND_URBAN_GROWTH,SRC-124|SRC-125,MODERN_SCHOLARLY_RETROSPECTION,海贸管理与坊、街、税务机构在上海镇汇聚,不等于上海镇创立于1269年,核南宋碑记和市舶司移驻文书
+SY-E006,C008,上海县,ADMIN_COUNTY,1290年（至元27）,元史地理志卷62,COUNTY_ESTABLISHMENT_RECORDED_VARIANT,SRC-127,CLASSICAL_TEXT_DIRECT_DIGITAL,元史地理志用至元27年记录立上海县,不能只凭这一条排斥1291和1292独立记录,核元史版本及原地方奏议
+SY-E007,C008,上海县,ADMIN_COUNTY,1291年七月己未,元史世祖纪卷16,COURT_DECISION_ON_COUNTY,SRC-126|SRC-130,CLASSICAL_CHRONICLE_AND_GOV_CALENDAR,元史本纪记分华亭之上海为县，1291年有具体朝廷纪事,未见所颁批准令原件，也不能证县署当日正式办公,核元代奏札和碑文
+SY-E008,C008,上海县,ADMIN_COUNTY,1292年（至元29）,明弘治上海志及唐时措公署记后代引文,COUNTY_OFFICE_AND_TERRITORY_IMPLEMENTATION,SRC-128|SRC-129|SRC-131,LATER_GAZETTEER_AND_CHGIS,1292成为常用建县年份并记从华亭割五乡,不意味着元史1290和1291皆为错误资料,核唐时措元代碑记及五乡乡保与官署时点
+SY-E009,C053,青龙镇,MILITARY_OR_MARKET_TOWN,唐天宝年间,青浦博物馆及上海博物馆考古史述,TANG_PORT_TOWN_USED,SRC-133|SRC-134,MUSEUM_SECONDARY_HISTORICAL_RECORD,唐宋青龙镇形成港镇并遗留考古遗迹,精确746年设镇原始诏令和青龙得名词源待核,查旧唐书水道与青龙军镇典籍
+SY-E010,C053,华亭县市舶务,CUSTOMS_OFFICE,1113年,上海博物馆2016官方介绍,REGIONAL_CUSTOMS_ADMIN_SETUP,SRC-133,MUSEUM_HISTORICAL_REPORT,1113年青龙所属华亭县设相关市舶务,不代表青龙镇当年必是独立市舶署,查宋会要和青龙文献
+SY-E011,C053,青龙镇市舶务,CUSTOMS_OFFICE,1131年,上海博物馆2016官方说明,TOWN_CUSTOMS_OFFICE_SETUP,SRC-133,MUSEUM_HISTORICAL_REPORT,1131青龙镇独立有市舶务的史书记载,不说明青龙镇后必升格县级政区,核南宋原始市舶政令
+SY-E012,C053,青龙镇港口,TRADE_PORT,南宋后期逐渐衰落,博物馆水系和港务考古综合史述,HARBOUR_DECLINE,SRC-133|SRC-134,OFFICIAL_ARCHAEOLOGY_SYNTHESIS,水系变动与港口失去海贸功能有关,需税额水文河道材料证成准确时点和因果比例,核吴淞江水文考古及港税史
+SY-E013,C053,青龙镇遗址,HERITAGE_SITE,2019年,青浦区政府官方文物公告,NAME_SURVIVES_IN_HERITAGE,SRC-135|SRC-136,GOV_HERITAGE_RECORD,2019全国重点文物保护及后续保护利用说明古镇名文化存续,古港唐宋经济功能并未因此延续,核考古保护规划及最新分期
