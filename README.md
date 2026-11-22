@@ -100,7 +100,7 @@
 - [研究札记03：景德镇年号、瓷器底款与明州山名及港市扩散](docs/research/P1D_03_JINGDEZHEN_MINGZHOU_ORIGIN_VS_DIFFUSION.md)
 - [C054：景德镇的年号命名与“景德年制”考古争议](cases/C054_JINGDEZHEN_REIGN_NAME_PORCELAIN.md)
 - [C055：明州—余姚郡—庆元府—宁波府](cases/C055_MINGZHOU_QINGYUAN_NINGBO.md)
-- [15条产业与港口名称事件](data/p1d_industry_port_name_events.csv)｜[名称形成、经济传播、政治改名证据协议](docs/methods/NAME_ORIGIN_DIFFUSION_AND_RENAMING_PROTOCOL.md)
+- [17条产业与港口名称事件](data/p1d_industry_port_name_events.csv)｜[6条Claim Lifecycle判断更新](data/p1d_claim_lifecycle_updates.csv)｜[名称形成、经济传播、政治改名证据协议](docs/methods/NAME_ORIGIN_DIFFUSION_AND_RENAMING_PROTOCOL.md)
 
 **当前已发现的核心差别**：景德镇地方史称宋代以景德年号命镇，但未取得1004年亲赐名原诏；2025《北宋“景德年制”瓷器款识新考》摘要反驳了北宋贡瓷底款“景德年制”造成名称的旧说。唐738明州取四明山名，宋992/999才有重要市舶管理制度；《宋史》1194年升庆元府，与1195庆元年号起用要分开；明1381年改宁波府有正史记录。
 
