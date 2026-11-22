@@ -45,6 +45,8 @@ def validate():
     sui_tang_events = rows_from("data/p1d_sui_tang_name_events.csv")
     song_yuan_events = rows_from("data/p1d_song_yuan_urban_name_events.csv")
     industry_port_events = rows_from("data/p1d_industry_port_name_events.csv")
+    reign_events = rows_from("data/p1d_song_reign_name_events.csv")
+    reign_disputes = rows_from("data/p1d_reign_naming_disputes.csv")
     p1d_claim_updates = rows_from("data/p1d_claim_lifecycle_updates.csv")
     name_referents = rows_from("data/p1b_name_referents.csv")
     referent_relations = rows_from("data/p1b_name_referent_relations.csv")
@@ -54,7 +56,7 @@ def validate():
                 catalog_queries, relations, qin_han_events,
                 name_referents, referent_relations, lifecycle_events, qiao_transfers,
                 sui_tang_events, song_yuan_events, industry_port_events,
-                p1d_claim_updates)):
+                p1d_claim_updates, reign_events, reign_disputes)):
         raise ValueError("Research registers cannot be empty")
 
     case_ids = required_unique(cases, "case_id", "case")
@@ -70,6 +72,8 @@ def validate():
     sui_tang_event_ids = required_unique(sui_tang_events, "event_id", "Sui-Tang event")
     song_yuan_event_ids = required_unique(song_yuan_events, "event_id", "Song-Yuan urban name event")
     industry_port_event_ids = required_unique(industry_port_events, "event_id", "industry-port naming event")
+    reign_event_ids = required_unique(reign_events, "event_id", "reign-name event")
+    reign_dispute_ids = required_unique(reign_disputes, "dispute_id", "reign-name dispute")
     p1d_claim_update_ids = required_unique(p1d_claim_updates, "update_id", "P1-D claim lifecycle update")
     referent_ids = required_unique(name_referents, "referent_id", "name referent")
     ref_relation_ids = required_unique(referent_relations, "relation_id", "referent relation")
@@ -217,6 +221,29 @@ def validate():
             if not (change.get(field) or "").strip():
                 raise ValueError(f"P1-D lifecycle line {line}: missing {field}")
 
+    for line, event in enumerate(reign_events, 2):
+        if event.get("case_id") not in case_ids:
+            raise ValueError(f"reign event line {line}: unknown case {event.get('case_id')!r}")
+        source_refs(event.get("source_ids", ""), source_ids, "reign event", line)
+        for field in ("name_form", "historical_object_type", "historical_date", "date_basis",
+                      "event_type", "naming_basis", "administrative_reason",
+                      "evidence_status", "not_established", "verification_next"):
+            if not (event.get(field) or "").strip():
+                raise ValueError(f"reign event line {line}: missing {field}")
+        if event.get("event_type") == "CHRONOLOGICAL_NEGATIVE_CONTROL" and (
+            "TEMPORAL_NEGATIVE" not in event.get("evidence_status", "")
+        ):
+            raise ValueError(f"reign event line {line}: early same-form name cannot be an unqualified reign-derived toponym")
+    for line, dispute in enumerate(reign_disputes, 2):
+        if dispute.get("case_id") not in case_ids:
+            raise ValueError(f"reign dispute line {line}: unknown case {dispute.get('case_id')!r}")
+        source_refs(dispute.get("source_a_ids", ""), source_ids, "reign dispute version A", line)
+        source_refs(dispute.get("source_b_ids", ""), source_ids, "reign dispute version B", line)
+        for field in ("issue_type", "version_a", "version_b", "current_status",
+                      "why_not_resolved", "verification_next"):
+            if not (dispute.get(field) or "").strip():
+                raise ValueError(f"reign dispute line {line}: missing {field}")
+
     with (ROOT / "data/toponym_case.schema.json").open(encoding="utf-8") as handle:
         schema = json.load(handle)
     if schema.get("type") != "object":
@@ -232,7 +259,8 @@ def validate():
           f"{len(sui_tang_event_ids)} Sui-Tang name events, "
           f"{len(song_yuan_event_ids)} Song-Yuan urban name events, "
           f"{len(industry_port_event_ids)} industry/port name events, "
-          f"{len(p1d_claim_update_ids)} P1-D claim lifecycle updates")
+          f"{len(p1d_claim_update_ids)} P1-D claim lifecycle updates, "
+          f"{len(reign_event_ids)} reign-name events, {len(reign_dispute_ids)} source disputes")
     print("Reference IDs, CSV and JSON syntax checked.")
     print("This does NOT validate historical facts, epigraphic readings or geographic identification.")
 
