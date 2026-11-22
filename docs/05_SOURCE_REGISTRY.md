@@ -127,3 +127,9 @@
 - **明宁波府 SRC-152—155**：《明史》及《明一统志》1381年二月改宁波；明代《大明一统名胜志》及宁波官方史述避“明”王朝国号与“海定则波宁”的说法是**命名动机与后代故事**，需与正史明确更名年份分开。
 
 参见 [札记03](research/P1D_03_JINGDEZHEN_MINGZHOU_ORIGIN_VS_DIFFUSION.md) 与 [source_registry.csv](../data/source_registry.csv)。
+
+## 补充考古原始资料线索（SRC-157—158）
+
+- **SRC-157**：[故宫博物院景德镇窑青白釉双鱼碗藏品](https://www.dpm.org.cn/collection/ceramic/227243.html)：故宫藏品号故00143128；所附背景说明提及江西九江宋咸平三年1000年纪年墓早期青白瓷钵，**纪年墓出土不等于生产日，产地亦待原发掘报告核证**。
+- **SRC-158**：[故宫博物院湖田窑](https://www.dpm.org.cn/lemmas/240457.html)：官方考古综述，五代已有青瓷、白瓷，宋创烧青白瓷；**五代是10世纪，不是公元5世纪**，且该考古资料不证实景德元年赐名原诏。
+- 相关事件IP-E016/017、Claim P1D-C041/042及[本轮Claim Lifecycle清单](../data/p1d_claim_lifecycle_updates.csv)，分别标明产业先于年号命镇、宋贡瓷底款争议和命名诏令缺口。
