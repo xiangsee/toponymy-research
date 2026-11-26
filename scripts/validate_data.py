@@ -47,6 +47,7 @@ def validate():
     industry_port_events = rows_from("data/p1d_industry_port_name_events.csv")
     reign_events = rows_from("data/p1d_song_reign_name_events.csv")
     reign_disputes = rows_from("data/p1d_reign_naming_disputes.csv")
+    jiading_witnesses = rows_from("data/p1d_jiading_evidence_witnesses.csv")
     p1d_claim_updates = rows_from("data/p1d_claim_lifecycle_updates.csv")
     name_referents = rows_from("data/p1b_name_referents.csv")
     referent_relations = rows_from("data/p1b_name_referent_relations.csv")
@@ -56,7 +57,8 @@ def validate():
                 catalog_queries, relations, qin_han_events,
                 name_referents, referent_relations, lifecycle_events, qiao_transfers,
                 sui_tang_events, song_yuan_events, industry_port_events,
-                p1d_claim_updates, reign_events, reign_disputes)):
+                p1d_claim_updates, reign_events, reign_disputes,
+                jiading_witnesses)):
         raise ValueError("Research registers cannot be empty")
 
     case_ids = required_unique(cases, "case_id", "case")
@@ -74,6 +76,7 @@ def validate():
     industry_port_event_ids = required_unique(industry_port_events, "event_id", "industry-port naming event")
     reign_event_ids = required_unique(reign_events, "event_id", "reign-name event")
     reign_dispute_ids = required_unique(reign_disputes, "dispute_id", "reign-name dispute")
+    jiading_witness_ids = required_unique(jiading_witnesses, "witness_id", "Jiading source witness")
     p1d_claim_update_ids = required_unique(p1d_claim_updates, "update_id", "P1-D claim lifecycle update")
     referent_ids = required_unique(name_referents, "referent_id", "name referent")
     ref_relation_ids = required_unique(referent_relations, "relation_id", "referent relation")
@@ -244,6 +247,24 @@ def validate():
             if not (dispute.get(field) or "").strip():
                 raise ValueError(f"reign dispute line {line}: missing {field}")
 
+    for line, witness in enumerate(jiading_witnesses, 2):
+        if witness.get("case_id") not in case_ids:
+            raise ValueError(f"Jiading witness line {line}: unknown case {witness.get('case_id')!r}")
+        source_refs(witness.get("source_ids", ""), source_ids, "Jiading witness", line)
+        for field in ("author_or_record", "evidence_content_date", "record_written_or_compiled",
+                      "event_or_text_type", "specific_attestation", "provenance_family",
+                      "source_review_level", "research_inference", "not_established",
+                      "verification_next"):
+            if not (witness.get(field) or "").strip():
+                raise ValueError(f"Jiading witness line {line}: missing {field}")
+    # One original composition may have multiple later copies; the family label is
+    # required so such copies are not treated as independently authored evidence.
+    copied_song_family = [
+        w for w in jiading_witnesses if "GAO-1220" in w.get("provenance_family", "")
+    ]
+    if len(copied_song_family) < 2:
+        raise ValueError("Expected to preserve provenance family for duplicated Gaoyansun witnesses")
+
     with (ROOT / "data/toponym_case.schema.json").open(encoding="utf-8") as handle:
         schema = json.load(handle)
     if schema.get("type") != "object":
@@ -260,7 +281,8 @@ def validate():
           f"{len(song_yuan_event_ids)} Song-Yuan urban name events, "
           f"{len(industry_port_event_ids)} industry/port name events, "
           f"{len(p1d_claim_update_ids)} P1-D claim lifecycle updates, "
-          f"{len(reign_event_ids)} reign-name events, {len(reign_dispute_ids)} source disputes")
+          f"{len(reign_event_ids)} reign-name events, {len(reign_dispute_ids)} source disputes, "
+          f"{len(jiading_witness_ids)} Jiading source witnesses")
     print("Reference IDs, CSV and JSON syntax checked.")
     print("This does NOT validate historical facts, epigraphic readings or geographic identification.")
 
