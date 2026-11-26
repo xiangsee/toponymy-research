@@ -236,3 +236,18 @@ NEW_NAME、RENAME、REINSTATE、ALIAS、BORROW、TRANSFER、SPLIT、MERGE、EXPA
 - `HISTORICAL_GRAPH_EMENDATION`：梨园/黎园与传本“黎国”校勘需要源考，不能误建第二个镇实体。
 
 结构化材料：[P1D-04札记](research/P1D_04_SONG_REIGN_NAME_CONTROL_STUDY.md)｜[事件](../data/p1d_song_reign_name_events.csv)｜[争议](../data/p1d_reign_naming_disputes.csv)｜[方法协议](methods/REIGN_NAME_ETYMOGRAPHY_GOVERNANCE_PROTOCOL.md)。
+
+## P. 同一名称的源家族与史料所记时间是两种独立维度（P1-D v1.5）
+
+**新的强制元数据**：
+- `event_time`：奏请、皇帝准奏、官吏到任、县署营建、后出《宋史》断代分开；
+- `composition_time`：原作者何时写文本（高衍孙1220年署记）；
+- `copy_or_edition_time`：1229《吴郡志》汪泰亨补注、明钱榖文集、康熙嘉定县志与现代CHGIS分别成版；
+- `author_role`：范成大是《吴郡志》原作者，**不能署1217补注为其亲笔**；
+- `provenance_family`：不同传本复刻同一高衍孙1220原作，不计作不同首次证人；
+- `competing_date_status`：1220作者已用嘉定县官职，而《宋史》1222才始设县，早晚冲突应按来源类型赋权；
+- `administrative_unit_label`：28都与28保必须分列，不据数字相同推定为同一制度单位。
+
+**核心经验**：历史GIS一个数值字段可以沿用后出正史1222，而同页的宋人史料及补注支撑1217—1218；数据库的canonical时间并不是对冲突史源的学术结案。
+
+附：[证据协议](methods/TOPONYM_SOURCE_FAMILY_AND_DATE_AUDIT.md)及[研究札记05](research/P1D_05_JIADING_FIRST_HAND_SOURCE_CRITICISM.md)。
